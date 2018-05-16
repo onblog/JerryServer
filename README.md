@@ -1,8 +1,5 @@
-# JerryServer
-Jerry服务器，一个助力于实现前后端完全分离的静态服务器！
-
 # 下载
-## 前往Github下载：[https://github.com/yueshutong/JerryServer](https://github.com/yueshutong/JerryServer)
+## 前往Github下载：[https://github.com/yueshutong/JerryServer/blob/master/Jerry.rar](https://github.com/yueshutong/JerryServer/blob/master/Jerry.rar)
 
 
 ----------
