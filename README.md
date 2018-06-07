@@ -1,3 +1,8 @@
+#前言
+- 此项目是我偶得灵感，花了两天时间写的一个静态web服务器。
+- 该服务器适用于前端开发人员，致力前后端完全分离。
+-  相比Vue.js，本项目的特点就是站在了分离服务器的角度。
+-  联系邮箱：yster@foxmail.com
 # 下载
 ## 前往Github下载：[https://github.com/yueshutong/JerryServer/blob/master/Jerry.rar](https://github.com/yueshutong/JerryServer/blob/master/Jerry.rar)
 
