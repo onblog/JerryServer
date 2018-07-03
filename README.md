@@ -11,6 +11,8 @@
 # 三：下载
 Github下载：[https://github.com/yueshutong/JerryServer/blob/master/Jerry.rar](https://github.com/yueshutong/JerryServer/blob/master/Jerry.rar)
 
+CSDN blog：https://blog.csdn.net/yueshutong123/article/details/80343953
+
 
 ----------
 
