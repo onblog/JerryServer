@@ -11,6 +11,8 @@
 # 三：下载
 Github下载：[https://github.com/yueshutong/JerryServer/blob/master/Jerry.rar](https://github.com/yueshutong/JerryServer/blob/master/Jerry.rar)
 
+
+## 如果下面图片看不了，访问博客
 CSDN blog：https://blog.csdn.net/yueshutong123/article/details/80343953
 
 
@@ -26,7 +28,7 @@ CSDN blog：https://blog.csdn.net/yueshutong123/article/details/80343953
 ----------
 
 
-# 五：使用文档
+#五：使用文档
 ##### 1.	web项目目录
 ![这里写图片描述](https://img-blog.csdn.net/20180516220258276?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3l1ZXNodXRvbmcxMjM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 ##### 2.编辑page.json 
@@ -37,6 +39,5 @@ CSDN blog：https://blog.csdn.net/yueshutong123/article/details/80343953
 ![这里写图片描述](https://img-blog.csdn.net/20180516220511185?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3l1ZXNodXRvbmcxMjM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 ##### 5.对比服务端提供的JSON数据
 ![这里写图片描述](https://img-blog.csdn.net/20180516220518838?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3l1ZXNodXRvbmcxMjM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
-
 
 ----------
