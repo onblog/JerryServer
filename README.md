@@ -12,32 +12,8 @@
 Github下载：[https://github.com/yueshutong/JerryServer/blob/master/Jerry.rar](https://github.com/yueshutong/JerryServer/blob/master/Jerry.rar)
 
 
-## 如果下面图片看不了，访问博客
+## 四：使用教程
 CSDN blog：https://blog.csdn.net/yueshutong123/article/details/80343953
 
-
-----------
-
-# 四：web服务器启动
-###### 1.在config可以配置启动端口，在template里有404页面，webapps里放置项目。
-![这里写图片描述](https://img-blog.csdn.net/20180516220540990?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3l1ZXNodXRvbmcxMjM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
-##### 2.	windows用户双击startup.exe启动服务器，Linux执行./startup.sh
-![这里写图片描述](https://img-blog.csdn.net/20180516220602380?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3l1ZXNodXRvbmcxMjM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
-
-
-----------
-
-
-#五：使用文档
-##### 1.	web项目目录
-![这里写图片描述](https://img-blog.csdn.net/20180516220258276?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3l1ZXNodXRvbmcxMjM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
-##### 2.编辑page.json 
-![这里写图片描述](https://img-blog.csdn.net/20180516220444377?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3l1ZXNodXRvbmcxMjM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
-##### 3.带JE自定义标签的HTML
-![这里写图片描述](https://img-blog.csdn.net/20180516220458448?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3l1ZXNodXRvbmcxMjM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
-##### 4.访问该HTML页面
-![这里写图片描述](https://img-blog.csdn.net/20180516220511185?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3l1ZXNodXRvbmcxMjM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
-##### 5.对比服务端提供的JSON数据
-![这里写图片描述](https://img-blog.csdn.net/20180516220518838?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3l1ZXNodXRvbmcxMjM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 ----------
