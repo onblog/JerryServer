@@ -12,8 +12,8 @@
 Github下载：[https://github.com/yueshutong/JerryServer/blob/master/Jerry.rar](https://github.com/yueshutong/JerryServer/blob/master/Jerry.rar)
 
 
-# 四：使用教程
-CSDN blog：https://blog.csdn.net/yueshutong123/article/details/80343953
+# 四：文档说明
+https://www.cnblogs.com/yueshutong/p/9381528.html
 
 
 ----------
@@ -28,3 +28,5 @@ CSDN blog：https://blog.csdn.net/yueshutong123/article/details/80343953
             <version>4.1.22.Final</version>
         </dependency>
 ```
+
+## 声明：原创作品，禁止申请专利！
