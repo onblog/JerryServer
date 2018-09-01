@@ -14,8 +14,8 @@
 Github下载：[https://github.com/yueshutong/JerryServer/blob/master/Jerry.rar](https://github.com/yueshutong/JerryServer/blob/master/Jerry.rar)
 Gitee下载：[https://gitee.com/zyzpp/JerryServer/blob/master/Jerry.rar](https://gitee.com/zyzpp/JerryServer/blob/master/Jerry.rar)
 
-# 四：文档说明
-https://www.cnblogs.com/yueshutong/p/9381528.html
+# 四：文档及使用说明
+https://gitee.com/zyzpp/JerryServer
 
 ----------
 # 六：核心依赖
