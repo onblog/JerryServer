@@ -1,6 +1,6 @@
 # Jerry Server 开发文档
 
-![//images2018.cnblogs.com/blog/1136672/201809/1136672-20180906213618075-1434394507.png](https://files.cnblogs.com/files/yueshutong/1536240835611.bmp)
+![](./picture/1536240835611.png)
 ## 1、Jerry 为何而生
 
 以Java web举例，现在的网站系统开发模式，对于web端和服务端的数据交互以及页面渲染，无外乎两种：
@@ -86,11 +86,11 @@ Jerry 渲染HTML页面的语法类似EL表达式。形如：`${字段名}`，我
 
 后台监控页面预览：
 
-![//images2018.cnblogs.com/blog/1136672/201809/1136672-20180906200050889-260934544.png](https://files.cnblogs.com/files/yueshutong/1536159902618.bmp)
+![](./picture/1536159902618.png)
 
 监控系统运行流程：
 
-![//images2018.cnblogs.com/blog/1136672/201809/1136672-20180906200057694-271202095.png](https://files.cnblogs.com/files/yueshutong/1536216950162.bmp)
+![](./picture/1536216950162.png)
 
 ## 7、负载均衡
 
