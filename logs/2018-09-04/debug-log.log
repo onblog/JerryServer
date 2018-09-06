@@ -1,0 +1,1417 @@
+2018-09-04 21:52:34.786 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+2018-09-04 21:52:34.796 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+2018-09-04 21:52:34.865 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+2018-09-04 21:52:34.865 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+2018-09-04 21:52:34.916 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+2018-09-04 21:52:34.919 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2018-09-04 21:52:34.930 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 8
+2018-09-04 21:52:34.933 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2018-09-04 21:52:34.935 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+2018-09-04 21:52:34.936 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2018-09-04 21:52:34.936 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+2018-09-04 21:52:34.938 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2018-09-04 21:52:34.938 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2018-09-04 21:52:34.938 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+2018-09-04 21:52:34.939 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2018-09-04 21:52:34.940 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\Administrator\AppData\Local\Temp (java.io.tmpdir)
+2018-09-04 21:52:34.940 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-09-04 21:52:34.942 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2018-09-04 21:52:34.943 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1883242496 bytes
+2018-09-04 21:52:34.943 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2018-09-04 21:52:34.944 [main] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+2018-09-04 21:52:34.968 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2018-09-04 21:52:35.504 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 8360 (auto-detected)
+2018-09-04 21:52:35.507 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2018-09-04 21:52:35.508 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2018-09-04 21:52:35.683 [main] DEBUG io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-09-04 21:52:35.684 [main] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2018-09-04 21:52:36.142 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 08:60:6e:ff:fe:1c:59:33 (auto-detected)
+2018-09-04 21:52:36.155 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2018-09-04 21:52:36.155 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2018-09-04 21:52:36.185 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2018-09-04 21:52:36.185 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2018-09-04 21:52:36.246 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+2018-09-04 21:52:36.246 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+2018-09-04 21:52:36.246 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+2018-09-04 21:52:36.246 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+2018-09-04 21:52:36.247 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+2018-09-04 21:52:36.247 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+2018-09-04 21:52:36.247 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+2018-09-04 21:52:36.249 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+2018-09-04 21:52:36.249 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2018-09-04 21:52:36.249 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+2018-09-04 21:52:36.249 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+2018-09-04 21:52:36.263 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+2018-09-04 21:52:36.263 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+2018-09-04 21:52:36.263 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2018-09-04 21:52:36.304 [main] INFO  cn.zyzpp.service.HttpServerStartup - Jerry server 8880 startup, Time 1539ms
+2018-09-04 21:52:36.309 [main] INFO  cn.zyzpp.service.HttpServerStartup - WEB_ROOT : D:\IDEA\workSpace\JerryServer\webapps
+2018-09-04 21:52:40.523 [nioEventLoopGroup-3-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.bytebuf.checkAccessible: true
+2018-09-04 21:52:40.525 [nioEventLoopGroup-3-2] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@752c93b9
+2018-09-04 21:52:40.574 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2018-09-04 21:52:40.574 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2018-09-04 21:52:40.574 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+2018-09-04 21:52:40.574 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2018-09-04 21:52:40.616 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\ROOT\index.html Content-Type : text/html
+2018-09-04 21:52:40.735 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.jerry.JEResolver - Find JE File :index.html = index.html
+2018-09-04 21:52:40.740 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.jerry.JEConnection - Load Balance : http://localhost:8880/json/data.json
+2018-09-04 21:52:40.799 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\json\data.json Content-Type : application/octet-stream
+2018-09-04 21:52:40.804 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: json File: data. LoadTime：7
+2018-09-04 21:52:40.811 [Thread-2] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 21:52:40.819 [nioEventLoopGroup-3-3] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibDecoder: false
+2018-09-04 21:52:40.819 [nioEventLoopGroup-3-3] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibEncoder: false
+2018-09-04 21:52:40.858 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: ROOT File: index.html LoadTime：242
+2018-09-04 21:52:40.878 [Thread-3] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 21:52:40.909 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\ROOT\image\logo.png Content-Type : image/png
+2018-09-04 21:52:40.913 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: ROOT File: image/logo.png LoadTime：3
+2018-09-04 21:52:40.923 [Thread-4] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 21:52:41.202 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\ROOT\image\favicon.ico Content-Type : image/x-icon
+2018-09-04 21:52:41.206 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: ROOT File: image/favicon.ico LoadTime：3
+2018-09-04 21:52:41.213 [Thread-5] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:07:03.556 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:07:03.559 [nioEventLoopGroup-3-4] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:07:03.563 [nioEventLoopGroup-3-5] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:07:03.565 [nioEventLoopGroup-3-5] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:07:03.575 [nioEventLoopGroup-3-6] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:07:03.577 [nioEventLoopGroup-3-6] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:07:05.256 [nioEventLoopGroup-3-7] DEBUG cn.zyzpp.http.JerryRequest - redirectD:\IDEA\workSpace\JerryServer\webapps\manage
+2018-09-04 22:07:05.273 [nioEventLoopGroup-3-8] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\index.html Content-Type : text/html
+2018-09-04 22:07:05.275 [nioEventLoopGroup-3-8] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: index.html LoadTime：1
+2018-09-04 22:07:05.301 [Thread-6] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:07:05.339 [nioEventLoopGroup-3-8] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 22:07:05.341 [nioEventLoopGroup-3-8] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：2
+2018-09-04 22:07:05.357 [Thread-7] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:07:05.440 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\layui.js Content-Type : application/octet-stream
+2018-09-04 22:07:05.442 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/layui.js LoadTime：3
+2018-09-04 22:07:05.483 [Thread-8] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:07:25.451 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 22:07:25.453 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：2
+2018-09-04 22:07:25.466 [Thread-9] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:08:05.552 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\index.html Content-Type : text/html
+2018-09-04 22:08:05.554 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: index.html LoadTime：3
+2018-09-04 22:08:05.563 [Thread-10] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:08:05.600 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 22:08:05.602 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：2
+2018-09-04 22:08:05.603 [nioEventLoopGroup-3-8] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\layui.all.js Content-Type : application/octet-stream
+2018-09-04 22:08:05.605 [nioEventLoopGroup-3-8] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/layui.all.js LoadTime：3
+2018-09-04 22:08:05.623 [Thread-11] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:08:05.624 [Thread-12] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:08:05.858 [nioEventLoopGroup-3-8] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:08:05.861 [nioEventLoopGroup-3-8] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:08:05.866 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:08:05.868 [nioEventLoopGroup-3-1] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:08:05.873 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:08:05.875 [nioEventLoopGroup-3-2] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:08:05.903 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:08:05.905 [nioEventLoopGroup-3-3] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:08:05.927 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\modules\code.css Content-Type : text/css
+2018-09-04 22:08:05.929 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/modules/code.css LoadTime：2
+2018-09-04 22:08:05.949 [Thread-13] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:10:24.607 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\index.html Content-Type : text/html
+2018-09-04 22:10:24.608 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: index.html LoadTime：2
+2018-09-04 22:10:24.622 [Thread-14] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:10:24.659 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 22:10:24.661 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：2
+2018-09-04 22:10:24.674 [nioEventLoopGroup-3-5] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\layui.js Content-Type : application/octet-stream
+2018-09-04 22:10:24.675 [nioEventLoopGroup-3-5] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/layui.js LoadTime：3
+2018-09-04 22:10:24.677 [Thread-15] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:10:24.679 [Thread-16] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:10:24.811 [nioEventLoopGroup-3-5] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:10:24.813 [nioEventLoopGroup-3-5] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:10:24.816 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:10:24.818 [nioEventLoopGroup-3-4] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:10:24.826 [nioEventLoopGroup-3-6] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:10:24.829 [nioEventLoopGroup-3-6] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:19:48.899 [nioEventLoopGroup-3-7] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\index.html Content-Type : text/html
+2018-09-04 22:19:48.901 [nioEventLoopGroup-3-7] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: index.html LoadTime：2
+2018-09-04 22:19:48.902 [Thread-17] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:19:48.946 [nioEventLoopGroup-3-7] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 22:19:48.948 [nioEventLoopGroup-3-7] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：2
+2018-09-04 22:19:48.960 [nioEventLoopGroup-3-8] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\layui.js Content-Type : application/octet-stream
+2018-09-04 22:19:48.962 [nioEventLoopGroup-3-8] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/layui.js LoadTime：3
+2018-09-04 22:19:48.967 [Thread-19] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:19:48.967 [Thread-18] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:19:49.043 [nioEventLoopGroup-3-8] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:19:49.045 [nioEventLoopGroup-3-8] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:19:49.049 [nioEventLoopGroup-3-7] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:19:49.051 [nioEventLoopGroup-3-7] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:19:49.057 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:19:49.059 [nioEventLoopGroup-3-1] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:19:51.587 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 22:19:51.589 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：2
+2018-09-04 22:19:51.675 [Thread-20] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:19:54.890 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:19:54.892 [nioEventLoopGroup-3-2] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:19:54.900 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:19:54.902 [nioEventLoopGroup-3-3] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:19:55.133 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:19:55.136 [nioEventLoopGroup-3-4] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:19:55.139 [nioEventLoopGroup-3-5] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:19:55.141 [nioEventLoopGroup-3-5] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:19:55.146 [nioEventLoopGroup-3-6] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:19:55.148 [nioEventLoopGroup-3-6] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:21:09.006 [nioEventLoopGroup-3-7] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\index.html Content-Type : text/html
+2018-09-04 22:21:09.007 [nioEventLoopGroup-3-7] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: index.html LoadTime：2
+2018-09-04 22:21:09.011 [Thread-21] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:21:09.056 [nioEventLoopGroup-3-7] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 22:21:09.057 [nioEventLoopGroup-3-7] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：2
+2018-09-04 22:21:09.060 [nioEventLoopGroup-3-8] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\layui.js Content-Type : application/octet-stream
+2018-09-04 22:21:09.061 [nioEventLoopGroup-3-8] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/layui.js LoadTime：3
+2018-09-04 22:21:09.075 [Thread-22] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:21:09.076 [Thread-23] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:21:09.220 [nioEventLoopGroup-3-7] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\table.js Content-Type : application/octet-stream
+2018-09-04 22:21:09.222 [nioEventLoopGroup-3-7] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/table.js LoadTime：2
+2018-09-04 22:21:09.234 [Thread-24] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:21:09.531 [nioEventLoopGroup-3-7] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laytpl.js Content-Type : application/octet-stream
+2018-09-04 22:21:09.532 [nioEventLoopGroup-3-7] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laytpl.js LoadTime：3
+2018-09-04 22:21:09.536 [Thread-25] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:21:09.598 [nioEventLoopGroup-3-7] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laypage.js Content-Type : application/octet-stream
+2018-09-04 22:21:09.599 [nioEventLoopGroup-3-7] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laypage.js LoadTime：3
+2018-09-04 22:21:09.602 [Thread-26] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:21:09.616 [nioEventLoopGroup-3-7] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\layer.js Content-Type : application/octet-stream
+2018-09-04 22:21:09.618 [nioEventLoopGroup-3-7] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/layer.js LoadTime：2
+2018-09-04 22:21:09.618 [Thread-27] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:21:09.638 [nioEventLoopGroup-3-7] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:21:09.640 [nioEventLoopGroup-3-7] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:21:09.640 [nioEventLoopGroup-3-8] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\jquery.js Content-Type : application/octet-stream
+2018-09-04 22:21:09.642 [nioEventLoopGroup-3-8] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/jquery.js LoadTime：2
+2018-09-04 22:21:09.642 [Thread-28] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:21:09.645 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:21:09.647 [nioEventLoopGroup-3-1] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:21:09.716 [nioEventLoopGroup-3-8] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\form.js Content-Type : application/octet-stream
+2018-09-04 22:21:09.717 [nioEventLoopGroup-3-8] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/form.js LoadTime：3
+2018-09-04 22:21:09.725 [Thread-29] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:21:09.741 [nioEventLoopGroup-3-8] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\util.js Content-Type : application/octet-stream
+2018-09-04 22:21:09.743 [nioEventLoopGroup-3-8] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/util.js LoadTime：3
+2018-09-04 22:21:09.745 [Thread-30] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:21:09.816 [nioEventLoopGroup-3-8] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:21:09.817 [nioEventLoopGroup-3-8] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:21:09.821 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:21:09.823 [nioEventLoopGroup-3-2] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:21:09.829 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:21:09.830 [nioEventLoopGroup-3-3] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:21:09.879 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:21:09.882 [nioEventLoopGroup-3-4] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:21:41.185 [nioEventLoopGroup-3-5] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\index.html Content-Type : text/html
+2018-09-04 22:21:41.186 [nioEventLoopGroup-3-5] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: index.html LoadTime：1
+2018-09-04 22:21:41.192 [Thread-31] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:21:41.234 [nioEventLoopGroup-3-5] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 22:21:41.235 [nioEventLoopGroup-3-5] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：2
+2018-09-04 22:21:41.237 [nioEventLoopGroup-3-6] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\layui.js Content-Type : application/octet-stream
+2018-09-04 22:21:41.239 [nioEventLoopGroup-3-6] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/layui.js LoadTime：2
+2018-09-04 22:21:41.254 [Thread-32] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:21:41.256 [Thread-33] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:21:41.424 [nioEventLoopGroup-3-6] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\table.js Content-Type : application/octet-stream
+2018-09-04 22:21:41.425 [nioEventLoopGroup-3-6] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/table.js LoadTime：3
+2018-09-04 22:21:41.428 [Thread-34] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:21:41.800 [nioEventLoopGroup-3-6] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laytpl.js Content-Type : application/octet-stream
+2018-09-04 22:21:41.801 [nioEventLoopGroup-3-6] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laytpl.js LoadTime：3
+2018-09-04 22:21:41.807 [Thread-35] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:21:41.907 [nioEventLoopGroup-3-6] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laypage.js Content-Type : application/octet-stream
+2018-09-04 22:21:41.908 [nioEventLoopGroup-3-6] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laypage.js LoadTime：2
+2018-09-04 22:21:41.914 [Thread-36] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:21:41.928 [nioEventLoopGroup-3-6] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\layer.js Content-Type : application/octet-stream
+2018-09-04 22:21:41.929 [nioEventLoopGroup-3-6] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/layer.js LoadTime：3
+2018-09-04 22:21:41.930 [Thread-37] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:21:41.954 [nioEventLoopGroup-3-6] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:21:41.956 [nioEventLoopGroup-3-6] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:21:41.958 [nioEventLoopGroup-3-5] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\jquery.js Content-Type : application/octet-stream
+2018-09-04 22:21:41.960 [nioEventLoopGroup-3-5] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/jquery.js LoadTime：4
+2018-09-04 22:21:41.961 [nioEventLoopGroup-3-7] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:21:41.963 [nioEventLoopGroup-3-7] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:21:41.966 [Thread-38] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:21:42.041 [nioEventLoopGroup-3-5] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\form.js Content-Type : application/octet-stream
+2018-09-04 22:21:42.042 [nioEventLoopGroup-3-5] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/form.js LoadTime：3
+2018-09-04 22:21:42.048 [Thread-39] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:21:42.071 [nioEventLoopGroup-3-5] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\util.js Content-Type : application/octet-stream
+2018-09-04 22:21:42.072 [nioEventLoopGroup-3-5] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/util.js LoadTime：3
+2018-09-04 22:21:42.078 [Thread-40] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:21:42.130 [nioEventLoopGroup-3-5] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:21:42.132 [nioEventLoopGroup-3-5] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:21:42.137 [nioEventLoopGroup-3-8] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:21:42.139 [nioEventLoopGroup-3-8] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:21:42.159 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:21:42.161 [nioEventLoopGroup-3-1] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:21:42.187 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:21:42.190 [nioEventLoopGroup-3-2] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:27:55.956 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+2018-09-04 22:27:55.966 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+2018-09-04 22:27:56.021 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+2018-09-04 22:27:56.022 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+2018-09-04 22:27:56.101 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+2018-09-04 22:27:56.106 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2018-09-04 22:27:56.107 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 8
+2018-09-04 22:27:56.113 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2018-09-04 22:27:56.115 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+2018-09-04 22:27:56.116 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2018-09-04 22:27:56.117 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+2018-09-04 22:27:56.119 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2018-09-04 22:27:56.120 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2018-09-04 22:27:56.120 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+2018-09-04 22:27:56.121 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2018-09-04 22:27:56.123 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\Administrator\AppData\Local\Temp (java.io.tmpdir)
+2018-09-04 22:27:56.124 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-09-04 22:27:56.126 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2018-09-04 22:27:56.127 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1883242496 bytes
+2018-09-04 22:27:56.127 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2018-09-04 22:27:56.128 [main] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+2018-09-04 22:27:56.164 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2018-09-04 22:27:56.612 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 704 (auto-detected)
+2018-09-04 22:27:56.615 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2018-09-04 22:27:56.615 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2018-09-04 22:27:56.794 [main] DEBUG io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-09-04 22:27:56.796 [main] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2018-09-04 22:27:57.201 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 08:60:6e:ff:fe:1c:59:33 (auto-detected)
+2018-09-04 22:27:57.210 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2018-09-04 22:27:57.210 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2018-09-04 22:27:57.236 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2018-09-04 22:27:57.241 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2018-09-04 22:27:57.285 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+2018-09-04 22:27:57.285 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+2018-09-04 22:27:57.290 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+2018-09-04 22:27:57.290 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+2018-09-04 22:27:57.290 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+2018-09-04 22:27:57.290 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+2018-09-04 22:27:57.290 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+2018-09-04 22:27:57.291 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+2018-09-04 22:27:57.291 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2018-09-04 22:27:57.291 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+2018-09-04 22:27:57.291 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+2018-09-04 22:27:57.309 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+2018-09-04 22:27:57.309 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+2018-09-04 22:27:57.309 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2018-09-04 22:27:57.343 [main] INFO  cn.zyzpp.service.HttpServerStartup - Jerry server 8880 startup, Time 1404ms
+2018-09-04 22:27:57.345 [main] INFO  cn.zyzpp.service.HttpServerStartup - WEB_ROOT : D:\IDEA\workSpace\JerryServer\webapps
+2018-09-04 22:29:01.554 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+2018-09-04 22:29:01.565 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+2018-09-04 22:29:01.615 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+2018-09-04 22:29:01.615 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+2018-09-04 22:29:01.673 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+2018-09-04 22:29:01.677 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2018-09-04 22:29:01.677 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 8
+2018-09-04 22:29:01.681 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2018-09-04 22:29:01.683 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+2018-09-04 22:29:01.685 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2018-09-04 22:29:01.691 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+2018-09-04 22:29:01.693 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2018-09-04 22:29:01.694 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2018-09-04 22:29:01.694 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+2018-09-04 22:29:01.694 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2018-09-04 22:29:01.696 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\Administrator\AppData\Local\Temp (java.io.tmpdir)
+2018-09-04 22:29:01.696 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-09-04 22:29:01.699 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2018-09-04 22:29:01.701 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1883242496 bytes
+2018-09-04 22:29:01.702 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2018-09-04 22:29:01.703 [main] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+2018-09-04 22:29:01.723 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2018-09-04 22:29:02.168 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 5536 (auto-detected)
+2018-09-04 22:29:02.171 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2018-09-04 22:29:02.171 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2018-09-04 22:29:02.341 [main] DEBUG io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-09-04 22:29:02.348 [main] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2018-09-04 22:29:02.740 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 08:60:6e:ff:fe:1c:59:33 (auto-detected)
+2018-09-04 22:29:02.756 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2018-09-04 22:29:02.757 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2018-09-04 22:29:02.793 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2018-09-04 22:29:02.794 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2018-09-04 22:29:02.876 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+2018-09-04 22:29:02.876 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+2018-09-04 22:29:02.882 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+2018-09-04 22:29:02.882 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+2018-09-04 22:29:02.882 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+2018-09-04 22:29:02.883 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+2018-09-04 22:29:02.883 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+2018-09-04 22:29:02.883 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+2018-09-04 22:29:02.883 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2018-09-04 22:29:02.883 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+2018-09-04 22:29:02.883 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+2018-09-04 22:29:02.905 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+2018-09-04 22:29:02.905 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+2018-09-04 22:29:02.906 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2018-09-04 22:29:02.945 [main] INFO  cn.zyzpp.service.HttpServerStartup - Jerry server 8880 startup, Time 1406ms
+2018-09-04 22:29:02.946 [main] INFO  cn.zyzpp.service.HttpServerStartup - WEB_ROOT : D:\IDEA\workSpace\JerryServer\webapps
+2018-09-04 22:29:05.820 [nioEventLoopGroup-3-1] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.bytebuf.checkAccessible: true
+2018-09-04 22:29:05.821 [nioEventLoopGroup-3-1] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@2efc03bb
+2018-09-04 22:29:05.903 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2018-09-04 22:29:05.903 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2018-09-04 22:29:05.903 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+2018-09-04 22:29:05.904 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2018-09-04 22:29:05.955 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\index.html Content-Type : text/html
+2018-09-04 22:29:05.959 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: index.html LoadTime：5
+2018-09-04 22:29:05.961 [Thread-1] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:29:05.971 [nioEventLoopGroup-3-1] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibDecoder: false
+2018-09-04 22:29:05.971 [nioEventLoopGroup-3-1] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibEncoder: false
+2018-09-04 22:29:06.070 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 22:29:06.072 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：2
+2018-09-04 22:29:06.092 [Thread-2] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:29:06.097 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\layui.js Content-Type : application/octet-stream
+2018-09-04 22:29:06.099 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/layui.js LoadTime：4
+2018-09-04 22:29:06.131 [Thread-4] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:29:06.293 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\table.js Content-Type : application/octet-stream
+2018-09-04 22:29:06.295 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/table.js LoadTime：4
+2018-09-04 22:29:06.321 [Thread-5] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:29:06.621 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laytpl.js Content-Type : application/octet-stream
+2018-09-04 22:29:06.622 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laytpl.js LoadTime：4
+2018-09-04 22:29:06.628 [Thread-6] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:29:06.744 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laypage.js Content-Type : application/octet-stream
+2018-09-04 22:29:06.746 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laypage.js LoadTime：3
+2018-09-04 22:29:06.753 [Thread-7] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:29:06.775 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\layer.js Content-Type : application/octet-stream
+2018-09-04 22:29:06.777 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/layer.js LoadTime：3
+2018-09-04 22:29:06.778 [Thread-8] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:29:06.805 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:29:06.807 [nioEventLoopGroup-3-2] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:29:06.810 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\jquery.js Content-Type : application/octet-stream
+2018-09-04 22:29:06.811 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/jquery.js LoadTime：3
+2018-09-04 22:29:06.820 [Thread-9] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:29:06.824 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:29:06.826 [nioEventLoopGroup-3-3] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:29:06.911 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\form.js Content-Type : application/octet-stream
+2018-09-04 22:29:06.913 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/form.js LoadTime：3
+2018-09-04 22:29:06.924 [Thread-10] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:29:06.941 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\util.js Content-Type : application/octet-stream
+2018-09-04 22:29:06.943 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/util.js LoadTime：3
+2018-09-04 22:29:06.955 [Thread-11] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:29:07.008 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:29:07.010 [nioEventLoopGroup-3-1] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:29:07.020 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:29:07.022 [nioEventLoopGroup-3-4] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:29:07.037 [nioEventLoopGroup-3-5] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:29:07.040 [nioEventLoopGroup-3-5] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:29:07.081 [nioEventLoopGroup-3-6] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:29:07.083 [nioEventLoopGroup-3-6] WARN  cn.zyzpp.handler.MyServerChannelHandler - exception occurred !
+2018-09-04 22:35:03.843 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+2018-09-04 22:35:03.854 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+2018-09-04 22:35:03.911 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+2018-09-04 22:35:03.911 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+2018-09-04 22:35:03.998 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+2018-09-04 22:35:04.002 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2018-09-04 22:35:04.002 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 8
+2018-09-04 22:35:04.008 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2018-09-04 22:35:04.009 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+2018-09-04 22:35:04.011 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2018-09-04 22:35:04.013 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+2018-09-04 22:35:04.015 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2018-09-04 22:35:04.015 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2018-09-04 22:35:04.015 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+2018-09-04 22:35:04.015 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2018-09-04 22:35:04.016 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\Administrator\AppData\Local\Temp (java.io.tmpdir)
+2018-09-04 22:35:04.017 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-09-04 22:35:04.019 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2018-09-04 22:35:04.021 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1883242496 bytes
+2018-09-04 22:35:04.026 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2018-09-04 22:35:04.027 [main] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+2018-09-04 22:35:04.047 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2018-09-04 22:35:04.497 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 5248 (auto-detected)
+2018-09-04 22:35:04.501 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2018-09-04 22:35:04.502 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2018-09-04 22:35:04.684 [main] DEBUG io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-09-04 22:35:04.686 [main] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2018-09-04 22:35:05.051 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 08:60:6e:ff:fe:1c:59:33 (auto-detected)
+2018-09-04 22:35:05.070 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2018-09-04 22:35:05.072 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2018-09-04 22:35:05.105 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2018-09-04 22:35:05.125 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2018-09-04 22:35:05.188 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+2018-09-04 22:35:05.189 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+2018-09-04 22:35:05.195 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+2018-09-04 22:35:05.196 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+2018-09-04 22:35:05.196 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+2018-09-04 22:35:05.196 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+2018-09-04 22:35:05.197 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+2018-09-04 22:35:05.197 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+2018-09-04 22:35:05.197 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2018-09-04 22:35:05.197 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+2018-09-04 22:35:05.197 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+2018-09-04 22:35:05.214 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+2018-09-04 22:35:05.215 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+2018-09-04 22:35:05.216 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2018-09-04 22:35:05.265 [main] INFO  cn.zyzpp.service.HttpServerStartup - Jerry server 8880 startup, Time 1439ms
+2018-09-04 22:35:05.269 [main] INFO  cn.zyzpp.service.HttpServerStartup - WEB_ROOT : D:\IDEA\workSpace\JerryServer\webapps
+2018-09-04 22:35:09.095 [nioEventLoopGroup-3-1] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.bytebuf.checkAccessible: true
+2018-09-04 22:35:09.097 [nioEventLoopGroup-3-1] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@35f0e826
+2018-09-04 22:35:09.134 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2018-09-04 22:35:09.135 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2018-09-04 22:35:09.135 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+2018-09-04 22:35:09.135 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2018-09-04 22:35:09.185 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\index.html Content-Type : text/html
+2018-09-04 22:35:09.190 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: index.html LoadTime：6
+2018-09-04 22:35:09.192 [Thread-1] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:35:09.200 [nioEventLoopGroup-3-1] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibDecoder: false
+2018-09-04 22:35:09.200 [nioEventLoopGroup-3-1] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibEncoder: false
+2018-09-04 22:35:09.290 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 22:35:09.292 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：2
+2018-09-04 22:35:09.310 [Thread-2] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:35:09.315 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\layui.js Content-Type : application/octet-stream
+2018-09-04 22:35:09.317 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/layui.js LoadTime：4
+2018-09-04 22:35:09.360 [Thread-4] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:35:09.534 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\table.js Content-Type : application/octet-stream
+2018-09-04 22:35:09.536 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/table.js LoadTime：3
+2018-09-04 22:35:09.551 [Thread-5] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:35:09.861 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laytpl.js Content-Type : application/octet-stream
+2018-09-04 22:35:09.863 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laytpl.js LoadTime：3
+2018-09-04 22:35:09.866 [Thread-6] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:35:09.981 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laypage.js Content-Type : application/octet-stream
+2018-09-04 22:35:09.983 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laypage.js LoadTime：4
+2018-09-04 22:35:09.990 [Thread-7] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:35:10.036 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\layer.js Content-Type : application/octet-stream
+2018-09-04 22:35:10.038 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/layer.js LoadTime：4
+2018-09-04 22:35:10.039 [Thread-8] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:35:10.065 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\modules\layer\default\layer.css Content-Type : text/css
+2018-09-04 22:35:10.067 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/modules/layer/default/layer.css LoadTime：2
+2018-09-04 22:35:10.072 [Thread-9] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:35:10.076 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\jquery.js Content-Type : application/octet-stream
+2018-09-04 22:35:10.078 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/jquery.js LoadTime：3
+2018-09-04 22:35:10.093 [Thread-10] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:35:10.186 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\form.js Content-Type : application/octet-stream
+2018-09-04 22:35:10.188 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/form.js LoadTime：3
+2018-09-04 22:35:10.195 [Thread-11] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:35:10.215 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\util.js Content-Type : application/octet-stream
+2018-09-04 22:35:10.216 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/util.js LoadTime：3
+2018-09-04 22:35:10.223 [Thread-12] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:35:10.283 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\json\log.json Content-Type : application/octet-stream
+2018-09-04 22:35:10.284 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: json File: log. LoadTime：3
+2018-09-04 22:35:10.305 [Thread-13] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:35:10.331 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\font\iconfont.woff Content-Type : application/octet-stream
+2018-09-04 22:35:10.332 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/font/iconfont.woff LoadTime：3
+2018-09-04 22:35:10.350 [Thread-14] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:48:14.788 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+2018-09-04 22:48:14.797 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+2018-09-04 22:48:14.849 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+2018-09-04 22:48:14.849 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+2018-09-04 22:48:14.903 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+2018-09-04 22:48:14.905 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2018-09-04 22:48:14.906 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 8
+2018-09-04 22:48:14.909 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2018-09-04 22:48:14.911 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+2018-09-04 22:48:14.913 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2018-09-04 22:48:14.915 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+2018-09-04 22:48:14.919 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2018-09-04 22:48:14.919 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2018-09-04 22:48:14.919 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+2018-09-04 22:48:14.919 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2018-09-04 22:48:14.921 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\Administrator\AppData\Local\Temp (java.io.tmpdir)
+2018-09-04 22:48:14.921 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-09-04 22:48:14.923 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2018-09-04 22:48:14.923 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1883242496 bytes
+2018-09-04 22:48:14.923 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2018-09-04 22:48:14.924 [main] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+2018-09-04 22:48:14.942 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2018-09-04 22:48:15.414 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 9680 (auto-detected)
+2018-09-04 22:48:15.417 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2018-09-04 22:48:15.417 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2018-09-04 22:48:15.590 [main] DEBUG io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-09-04 22:48:15.593 [main] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2018-09-04 22:48:15.992 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 08:60:6e:ff:fe:1c:59:33 (auto-detected)
+2018-09-04 22:48:16.006 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2018-09-04 22:48:16.006 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2018-09-04 22:48:16.042 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2018-09-04 22:48:16.043 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2018-09-04 22:48:16.133 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+2018-09-04 22:48:16.133 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+2018-09-04 22:48:16.141 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+2018-09-04 22:48:16.141 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+2018-09-04 22:48:16.141 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+2018-09-04 22:48:16.141 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+2018-09-04 22:48:16.142 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+2018-09-04 22:48:16.142 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+2018-09-04 22:48:16.142 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2018-09-04 22:48:16.142 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+2018-09-04 22:48:16.145 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+2018-09-04 22:48:16.159 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+2018-09-04 22:48:16.160 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+2018-09-04 22:48:16.160 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2018-09-04 22:48:16.194 [main] INFO  cn.zyzpp.service.HttpServerStartup - Jerry server 8880 startup, Time 1422ms
+2018-09-04 22:48:16.195 [main] INFO  cn.zyzpp.service.HttpServerStartup - WEB_ROOT : D:\IDEA\workSpace\JerryServer\webapps
+2018-09-04 22:48:25.606 [nioEventLoopGroup-3-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.bytebuf.checkAccessible: true
+2018-09-04 22:48:25.608 [nioEventLoopGroup-3-2] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@183826a7
+2018-09-04 22:48:25.689 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2018-09-04 22:48:25.690 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2018-09-04 22:48:25.690 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+2018-09-04 22:48:25.690 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2018-09-04 22:48:25.734 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\index.html Content-Type : text/html
+2018-09-04 22:48:25.739 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: index.html LoadTime：6
+2018-09-04 22:48:25.743 [Thread-1] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:48:25.752 [nioEventLoopGroup-3-1] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibDecoder: false
+2018-09-04 22:48:25.752 [nioEventLoopGroup-3-1] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibEncoder: false
+2018-09-04 22:48:25.837 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 22:48:25.839 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：2
+2018-09-04 22:48:25.859 [Thread-2] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:48:25.864 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\layui.js Content-Type : application/octet-stream
+2018-09-04 22:48:25.866 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/layui.js LoadTime：3
+2018-09-04 22:48:25.912 [Thread-4] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:48:26.052 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\table.js Content-Type : application/octet-stream
+2018-09-04 22:48:26.054 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/table.js LoadTime：4
+2018-09-04 22:48:26.077 [Thread-5] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:48:26.376 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laytpl.js Content-Type : application/octet-stream
+2018-09-04 22:48:26.377 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laytpl.js LoadTime：3
+2018-09-04 22:48:26.381 [Thread-6] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:48:26.509 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laypage.js Content-Type : application/octet-stream
+2018-09-04 22:48:26.511 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laypage.js LoadTime：4
+2018-09-04 22:48:26.524 [Thread-7] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:48:26.544 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\layer.js Content-Type : application/octet-stream
+2018-09-04 22:48:26.545 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/layer.js LoadTime：3
+2018-09-04 22:48:26.552 [Thread-8] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:48:26.568 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\modules\layer\default\layer.css Content-Type : text/css
+2018-09-04 22:48:26.570 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/modules/layer/default/layer.css LoadTime：2
+2018-09-04 22:48:26.575 [Thread-9] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:48:26.586 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\jquery.js Content-Type : application/octet-stream
+2018-09-04 22:48:26.588 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/jquery.js LoadTime：3
+2018-09-04 22:48:26.597 [Thread-10] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:48:26.673 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\form.js Content-Type : application/octet-stream
+2018-09-04 22:48:26.675 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/form.js LoadTime：3
+2018-09-04 22:48:26.691 [Thread-11] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:48:26.736 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\util.js Content-Type : application/octet-stream
+2018-09-04 22:48:26.738 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/util.js LoadTime：3
+2018-09-04 22:48:26.752 [Thread-12] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:48:26.816 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:48:26.818 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: null File: D:/IDEA/workSpace/JerryServer/template/404.html LoadTime：2
+2018-09-04 22:48:26.819 [Thread-13] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:48:26.851 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\font\iconfont.woff Content-Type : application/octet-stream
+2018-09-04 22:48:26.853 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/font/iconfont.woff LoadTime：3
+2018-09-04 22:48:26.873 [Thread-14] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:52:08.582 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\index.html Content-Type : text/html
+2018-09-04 22:52:08.583 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: index.html LoadTime：2
+2018-09-04 22:52:08.591 [Thread-15] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:52:08.638 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 22:52:08.640 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：2
+2018-09-04 22:52:08.642 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\layui.js Content-Type : application/octet-stream
+2018-09-04 22:52:08.644 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/layui.js LoadTime：3
+2018-09-04 22:52:08.661 [Thread-16] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:52:08.664 [Thread-17] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:52:08.865 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\table.js Content-Type : application/octet-stream
+2018-09-04 22:52:08.867 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/table.js LoadTime：2
+2018-09-04 22:52:08.870 [Thread-18] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:52:09.186 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laytpl.js Content-Type : application/octet-stream
+2018-09-04 22:52:09.187 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laytpl.js LoadTime：3
+2018-09-04 22:52:09.194 [Thread-19] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:52:09.308 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laypage.js Content-Type : application/octet-stream
+2018-09-04 22:52:09.310 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laypage.js LoadTime：3
+2018-09-04 22:52:09.316 [Thread-20] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:52:09.329 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\layer.js Content-Type : application/octet-stream
+2018-09-04 22:52:09.331 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/layer.js LoadTime：3
+2018-09-04 22:52:09.343 [Thread-21] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:52:09.359 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\modules\layer\default\layer.css Content-Type : text/css
+2018-09-04 22:52:09.360 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/modules/layer/default/layer.css LoadTime：2
+2018-09-04 22:52:09.365 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\jquery.js Content-Type : application/octet-stream
+2018-09-04 22:52:09.366 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/jquery.js LoadTime：3
+2018-09-04 22:52:09.380 [Thread-22] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:52:09.399 [Thread-23] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:52:09.498 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\form.js Content-Type : application/octet-stream
+2018-09-04 22:52:09.500 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/form.js LoadTime：3
+2018-09-04 22:52:09.508 [Thread-24] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:52:09.532 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\util.js Content-Type : application/octet-stream
+2018-09-04 22:52:09.534 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/util.js LoadTime：3
+2018-09-04 22:52:09.535 [Thread-25] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:52:09.598 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:52:09.600 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: null File: D:/IDEA/workSpace/JerryServer/template/404.html LoadTime：2
+2018-09-04 22:52:09.605 [Thread-26] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:52:09.628 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\font\iconfont.woff Content-Type : application/octet-stream
+2018-09-04 22:52:09.629 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/font/iconfont.woff LoadTime：3
+2018-09-04 22:52:09.642 [Thread-27] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:54:13.882 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+2018-09-04 22:54:13.892 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+2018-09-04 22:54:13.964 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+2018-09-04 22:54:13.965 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+2018-09-04 22:54:14.015 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+2018-09-04 22:54:14.018 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2018-09-04 22:54:14.019 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 8
+2018-09-04 22:54:14.022 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2018-09-04 22:54:14.026 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+2018-09-04 22:54:14.028 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2018-09-04 22:54:14.030 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+2018-09-04 22:54:14.032 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2018-09-04 22:54:14.032 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2018-09-04 22:54:14.032 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+2018-09-04 22:54:14.033 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2018-09-04 22:54:14.034 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\Administrator\AppData\Local\Temp (java.io.tmpdir)
+2018-09-04 22:54:14.034 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-09-04 22:54:14.038 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2018-09-04 22:54:14.039 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1883242496 bytes
+2018-09-04 22:54:14.039 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2018-09-04 22:54:14.042 [main] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+2018-09-04 22:54:14.070 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2018-09-04 22:54:14.608 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 1968 (auto-detected)
+2018-09-04 22:54:14.612 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2018-09-04 22:54:14.613 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2018-09-04 22:54:14.831 [main] DEBUG io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-09-04 22:54:14.833 [main] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2018-09-04 22:54:15.402 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 08:60:6e:ff:fe:1c:59:33 (auto-detected)
+2018-09-04 22:54:15.413 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2018-09-04 22:54:15.413 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2018-09-04 22:54:15.436 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2018-09-04 22:54:15.436 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2018-09-04 22:54:15.483 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+2018-09-04 22:54:15.490 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+2018-09-04 22:54:15.491 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+2018-09-04 22:54:15.491 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+2018-09-04 22:54:15.491 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+2018-09-04 22:54:15.491 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+2018-09-04 22:54:15.491 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+2018-09-04 22:54:15.491 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+2018-09-04 22:54:15.491 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2018-09-04 22:54:15.492 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+2018-09-04 22:54:15.492 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+2018-09-04 22:54:15.509 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+2018-09-04 22:54:15.509 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+2018-09-04 22:54:15.509 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2018-09-04 22:54:15.542 [main] INFO  cn.zyzpp.service.HttpServerStartup - Jerry server 8880 startup, Time 1679ms
+2018-09-04 22:54:15.543 [main] INFO  cn.zyzpp.service.HttpServerStartup - WEB_ROOT : D:\IDEA\workSpace\JerryServer\webapps
+2018-09-04 22:54:36.220 [nioEventLoopGroup-3-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.bytebuf.checkAccessible: true
+2018-09-04 22:54:36.221 [nioEventLoopGroup-3-2] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@526b227b
+2018-09-04 22:54:36.284 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2018-09-04 22:54:36.284 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2018-09-04 22:54:36.284 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+2018-09-04 22:54:36.284 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2018-09-04 22:54:36.332 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\index.html Content-Type : text/html
+2018-09-04 22:54:36.339 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: index.html LoadTime：6
+2018-09-04 22:54:36.345 [Thread-1] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:54:36.352 [nioEventLoopGroup-3-1] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibDecoder: false
+2018-09-04 22:54:36.353 [nioEventLoopGroup-3-1] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibEncoder: false
+2018-09-04 22:54:36.451 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 22:54:36.453 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：2
+2018-09-04 22:54:36.471 [Thread-2] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:54:36.480 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\layui.js Content-Type : application/octet-stream
+2018-09-04 22:54:36.482 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/layui.js LoadTime：4
+2018-09-04 22:54:36.510 [Thread-4] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:54:36.674 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\table.js Content-Type : application/octet-stream
+2018-09-04 22:54:36.676 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/table.js LoadTime：4
+2018-09-04 22:54:36.692 [Thread-5] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:54:37.018 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laytpl.js Content-Type : application/octet-stream
+2018-09-04 22:54:37.020 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laytpl.js LoadTime：3
+2018-09-04 22:54:37.025 [Thread-6] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:54:37.119 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laypage.js Content-Type : application/octet-stream
+2018-09-04 22:54:37.121 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laypage.js LoadTime：3
+2018-09-04 22:54:37.131 [Thread-7] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:54:37.144 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\layer.js Content-Type : application/octet-stream
+2018-09-04 22:54:37.146 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/layer.js LoadTime：3
+2018-09-04 22:54:37.148 [Thread-8] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:54:37.171 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\modules\layer\default\layer.css Content-Type : text/css
+2018-09-04 22:54:37.172 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/modules/layer/default/layer.css LoadTime：2
+2018-09-04 22:54:37.187 [Thread-9] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:54:37.191 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\jquery.js Content-Type : application/octet-stream
+2018-09-04 22:54:37.193 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/jquery.js LoadTime：3
+2018-09-04 22:54:37.195 [Thread-10] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:54:37.327 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\form.js Content-Type : application/octet-stream
+2018-09-04 22:54:37.329 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/form.js LoadTime：3
+2018-09-04 22:54:37.330 [Thread-11] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:54:37.358 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\util.js Content-Type : application/octet-stream
+2018-09-04 22:54:37.360 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/util.js LoadTime：3
+2018-09-04 22:54:37.363 [Thread-12] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:54:37.419 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\template\404.html Content-Type : text/html
+2018-09-04 22:54:37.422 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: null File: D:/IDEA/workSpace/JerryServer/template/404.html LoadTime：2
+2018-09-04 22:54:37.426 [Thread-13] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:54:37.454 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\font\iconfont.woff Content-Type : application/octet-stream
+2018-09-04 22:54:37.456 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/font/iconfont.woff LoadTime：2
+2018-09-04 22:54:37.474 [Thread-14] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:56:46.565 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+2018-09-04 22:56:46.578 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+2018-09-04 22:56:46.632 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+2018-09-04 22:56:46.633 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+2018-09-04 22:56:46.715 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+2018-09-04 22:56:46.718 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2018-09-04 22:56:46.718 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 8
+2018-09-04 22:56:46.721 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2018-09-04 22:56:46.722 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+2018-09-04 22:56:46.724 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2018-09-04 22:56:46.725 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+2018-09-04 22:56:46.727 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2018-09-04 22:56:46.727 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2018-09-04 22:56:46.727 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+2018-09-04 22:56:46.727 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2018-09-04 22:56:46.729 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\Administrator\AppData\Local\Temp (java.io.tmpdir)
+2018-09-04 22:56:46.729 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-09-04 22:56:46.731 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2018-09-04 22:56:46.732 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1883242496 bytes
+2018-09-04 22:56:46.734 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2018-09-04 22:56:46.736 [main] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+2018-09-04 22:56:46.753 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2018-09-04 22:56:47.215 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 9536 (auto-detected)
+2018-09-04 22:56:47.223 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2018-09-04 22:56:47.223 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2018-09-04 22:56:47.614 [main] DEBUG io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-09-04 22:56:47.617 [main] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2018-09-04 22:56:47.928 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 08:60:6e:ff:fe:1c:59:33 (auto-detected)
+2018-09-04 22:56:47.941 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2018-09-04 22:56:47.941 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2018-09-04 22:56:47.968 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2018-09-04 22:56:47.968 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2018-09-04 22:56:48.010 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+2018-09-04 22:56:48.011 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+2018-09-04 22:56:48.018 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+2018-09-04 22:56:48.018 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+2018-09-04 22:56:48.018 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+2018-09-04 22:56:48.018 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+2018-09-04 22:56:48.018 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+2018-09-04 22:56:48.018 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+2018-09-04 22:56:48.018 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2018-09-04 22:56:48.019 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+2018-09-04 22:56:48.019 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+2018-09-04 22:56:48.035 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+2018-09-04 22:56:48.036 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+2018-09-04 22:56:48.036 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2018-09-04 22:56:48.078 [main] INFO  cn.zyzpp.service.HttpServerStartup - Jerry server 8880 startup, Time 1532ms
+2018-09-04 22:56:48.079 [main] INFO  cn.zyzpp.service.HttpServerStartup - WEB_ROOT : D:\IDEA\workSpace\JerryServer\webapps
+2018-09-04 22:56:53.117 [nioEventLoopGroup-3-1] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.bytebuf.checkAccessible: true
+2018-09-04 22:56:53.119 [nioEventLoopGroup-3-1] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@79c2458f
+2018-09-04 22:56:53.200 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2018-09-04 22:56:53.201 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2018-09-04 22:56:53.201 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+2018-09-04 22:56:53.201 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2018-09-04 22:56:53.244 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\index.html Content-Type : text/html
+2018-09-04 22:56:53.249 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: index.html LoadTime：6
+2018-09-04 22:56:53.252 [Thread-1] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:56:53.262 [nioEventLoopGroup-3-1] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibDecoder: false
+2018-09-04 22:56:53.263 [nioEventLoopGroup-3-1] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibEncoder: false
+2018-09-04 22:56:53.369 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 22:56:53.371 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：2
+2018-09-04 22:56:53.401 [Thread-2] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:56:53.405 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\layui.js Content-Type : application/octet-stream
+2018-09-04 22:56:53.407 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/layui.js LoadTime：4
+2018-09-04 22:56:53.436 [Thread-4] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:56:53.598 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\table.js Content-Type : application/octet-stream
+2018-09-04 22:56:53.600 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/table.js LoadTime：4
+2018-09-04 22:56:53.618 [Thread-5] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:56:54.005 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laytpl.js Content-Type : application/octet-stream
+2018-09-04 22:56:54.007 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laytpl.js LoadTime：3
+2018-09-04 22:56:54.008 [Thread-6] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:56:54.104 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laypage.js Content-Type : application/octet-stream
+2018-09-04 22:56:54.105 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laypage.js LoadTime：3
+2018-09-04 22:56:54.114 [Thread-7] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:56:54.131 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\layer.js Content-Type : application/octet-stream
+2018-09-04 22:56:54.133 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/layer.js LoadTime：4
+2018-09-04 22:56:54.140 [Thread-8] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:56:54.153 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\modules\layer\default\layer.css Content-Type : text/css
+2018-09-04 22:56:54.154 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/modules/layer/default/layer.css LoadTime：2
+2018-09-04 22:56:54.163 [Thread-9] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:56:54.166 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\jquery.js Content-Type : application/octet-stream
+2018-09-04 22:56:54.168 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/jquery.js LoadTime：3
+2018-09-04 22:56:54.172 [Thread-10] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:56:54.276 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\form.js Content-Type : application/octet-stream
+2018-09-04 22:56:54.278 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/form.js LoadTime：3
+2018-09-04 22:56:54.315 [Thread-11] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:56:54.318 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\util.js Content-Type : application/octet-stream
+2018-09-04 22:56:54.319 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/util.js LoadTime：3
+2018-09-04 22:56:54.324 [Thread-12] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:56:54.420 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\template\404.html Content-Type : text/html
+2018-09-04 22:56:54.423 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: template File: 404.html LoadTime：2
+2018-09-04 22:56:54.432 [Thread-13] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 22:56:54.449 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\font\iconfont.woff Content-Type : application/octet-stream
+2018-09-04 22:56:54.451 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/font/iconfont.woff LoadTime：3
+2018-09-04 22:56:54.461 [Thread-14] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:01:34.534 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+2018-09-04 23:01:34.542 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+2018-09-04 23:01:34.617 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+2018-09-04 23:01:34.617 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+2018-09-04 23:01:34.720 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+2018-09-04 23:01:34.724 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2018-09-04 23:01:34.724 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 8
+2018-09-04 23:01:34.730 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2018-09-04 23:01:34.732 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+2018-09-04 23:01:34.733 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2018-09-04 23:01:34.734 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+2018-09-04 23:01:34.735 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2018-09-04 23:01:34.736 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2018-09-04 23:01:34.736 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+2018-09-04 23:01:34.736 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2018-09-04 23:01:34.737 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\Administrator\AppData\Local\Temp (java.io.tmpdir)
+2018-09-04 23:01:34.738 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-09-04 23:01:34.740 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2018-09-04 23:01:34.740 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1883242496 bytes
+2018-09-04 23:01:34.741 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2018-09-04 23:01:34.742 [main] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+2018-09-04 23:01:34.784 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2018-09-04 23:01:35.419 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 12184 (auto-detected)
+2018-09-04 23:01:35.431 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2018-09-04 23:01:35.432 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2018-09-04 23:01:36.289 [main] DEBUG io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-09-04 23:01:36.290 [main] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2018-09-04 23:01:36.686 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 08:60:6e:ff:fe:1c:59:33 (auto-detected)
+2018-09-04 23:01:36.696 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2018-09-04 23:01:36.698 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2018-09-04 23:01:36.716 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2018-09-04 23:01:36.716 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2018-09-04 23:01:36.758 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+2018-09-04 23:01:36.763 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+2018-09-04 23:01:36.763 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+2018-09-04 23:01:36.763 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+2018-09-04 23:01:36.763 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+2018-09-04 23:01:36.763 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+2018-09-04 23:01:36.763 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+2018-09-04 23:01:36.763 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+2018-09-04 23:01:36.763 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2018-09-04 23:01:36.764 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+2018-09-04 23:01:36.764 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+2018-09-04 23:01:36.786 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+2018-09-04 23:01:36.787 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+2018-09-04 23:01:36.787 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2018-09-04 23:01:36.819 [main] INFO  cn.zyzpp.service.HttpServerStartup - Jerry server 8880 startup, Time 2304ms
+2018-09-04 23:01:36.820 [main] INFO  cn.zyzpp.service.HttpServerStartup - WEB_ROOT : D:\IDEA\workSpace\JerryServer\webapps
+2018-09-04 23:01:46.469 [nioEventLoopGroup-3-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.bytebuf.checkAccessible: true
+2018-09-04 23:01:46.471 [nioEventLoopGroup-3-2] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3254f313
+2018-09-04 23:01:46.549 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2018-09-04 23:01:46.550 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2018-09-04 23:01:46.550 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+2018-09-04 23:01:46.550 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2018-09-04 23:01:46.601 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\index.html Content-Type : text/html
+2018-09-04 23:01:46.607 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: index.html LoadTime：6
+2018-09-04 23:01:46.609 [Thread-1] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:01:46.618 [nioEventLoopGroup-3-1] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibDecoder: false
+2018-09-04 23:01:46.618 [nioEventLoopGroup-3-1] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibEncoder: false
+2018-09-04 23:01:46.705 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 23:01:46.707 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：2
+2018-09-04 23:01:46.738 [Thread-2] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:01:46.743 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\layui.js Content-Type : application/octet-stream
+2018-09-04 23:01:46.745 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/layui.js LoadTime：5
+2018-09-04 23:01:46.772 [Thread-4] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:01:46.953 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\table.js Content-Type : application/octet-stream
+2018-09-04 23:01:46.955 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/table.js LoadTime：4
+2018-09-04 23:01:46.973 [Thread-5] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:01:47.295 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laytpl.js Content-Type : application/octet-stream
+2018-09-04 23:01:47.297 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laytpl.js LoadTime：3
+2018-09-04 23:01:47.302 [Thread-6] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:01:47.424 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laypage.js Content-Type : application/octet-stream
+2018-09-04 23:01:47.426 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laypage.js LoadTime：3
+2018-09-04 23:01:47.432 [Thread-7] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:01:47.456 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\layer.js Content-Type : application/octet-stream
+2018-09-04 23:01:47.457 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/layer.js LoadTime：3
+2018-09-04 23:01:47.459 [Thread-8] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:01:47.481 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\modules\layer\default\layer.css Content-Type : text/css
+2018-09-04 23:01:47.483 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/modules/layer/default/layer.css LoadTime：2
+2018-09-04 23:01:47.487 [Thread-9] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:01:47.493 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\jquery.js Content-Type : application/octet-stream
+2018-09-04 23:01:47.494 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/jquery.js LoadTime：3
+2018-09-04 23:01:47.501 [Thread-10] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:01:47.582 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\form.js Content-Type : application/octet-stream
+2018-09-04 23:01:47.583 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/form.js LoadTime：3
+2018-09-04 23:01:47.590 [Thread-11] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:01:47.610 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\util.js Content-Type : application/octet-stream
+2018-09-04 23:01:47.611 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/util.js LoadTime：3
+2018-09-04 23:01:47.615 [Thread-12] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:01:47.669 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\template\404.html Content-Type : text/html
+2018-09-04 23:01:47.672 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: template File: 404.html LoadTime：3
+2018-09-04 23:01:47.682 [Thread-13] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:01:47.701 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\font\iconfont.woff Content-Type : application/octet-stream
+2018-09-04 23:01:47.703 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/font/iconfont.woff LoadTime：3
+2018-09-04 23:01:47.728 [Thread-14] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:02:59.930 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\index.html Content-Type : text/html
+2018-09-04 23:02:59.932 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: index.html LoadTime：2
+2018-09-04 23:02:59.938 [Thread-15] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:02:59.979 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 23:02:59.981 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：1
+2018-09-04 23:02:59.992 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\layui.js Content-Type : application/octet-stream
+2018-09-04 23:02:59.993 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/layui.js LoadTime：3
+2018-09-04 23:02:59.999 [Thread-16] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:00.004 [Thread-17] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:00.172 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\table.js Content-Type : application/octet-stream
+2018-09-04 23:03:00.173 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/table.js LoadTime：3
+2018-09-04 23:03:00.176 [Thread-18] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:00.495 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laytpl.js Content-Type : application/octet-stream
+2018-09-04 23:03:00.496 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laytpl.js LoadTime：3
+2018-09-04 23:03:00.504 [Thread-19] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:00.598 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laypage.js Content-Type : application/octet-stream
+2018-09-04 23:03:00.600 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laypage.js LoadTime：4
+2018-09-04 23:03:00.613 [Thread-20] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:00.649 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\layer.js Content-Type : application/octet-stream
+2018-09-04 23:03:00.651 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/layer.js LoadTime：3
+2018-09-04 23:03:00.652 [Thread-21] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:00.673 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\modules\layer\default\layer.css Content-Type : text/css
+2018-09-04 23:03:00.675 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/modules/layer/default/layer.css LoadTime：2
+2018-09-04 23:03:00.679 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\jquery.js Content-Type : application/octet-stream
+2018-09-04 23:03:00.681 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/jquery.js LoadTime：3
+2018-09-04 23:03:00.701 [Thread-22] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:00.702 [Thread-23] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:00.824 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\form.js Content-Type : application/octet-stream
+2018-09-04 23:03:00.826 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/form.js LoadTime：3
+2018-09-04 23:03:00.844 [Thread-24] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:00.862 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\util.js Content-Type : application/octet-stream
+2018-09-04 23:03:00.864 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/util.js LoadTime：2
+2018-09-04 23:03:00.867 [Thread-25] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:00.916 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\template\404.html Content-Type : text/html
+2018-09-04 23:03:00.918 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: template File: 404.html LoadTime：2
+2018-09-04 23:03:00.919 [Thread-26] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:00.935 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\font\iconfont.woff Content-Type : application/octet-stream
+2018-09-04 23:03:00.937 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/font/iconfont.woff LoadTime：3
+2018-09-04 23:03:00.942 [Thread-27] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:18.470 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\index.html Content-Type : text/html
+2018-09-04 23:03:18.471 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: index.html LoadTime：2
+2018-09-04 23:03:18.478 [Thread-28] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:18.526 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 23:03:18.527 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：2
+2018-09-04 23:03:18.530 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\layui.js Content-Type : application/octet-stream
+2018-09-04 23:03:18.532 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/layui.js LoadTime：3
+2018-09-04 23:03:18.548 [Thread-29] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:18.549 [Thread-30] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:18.709 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\table.js Content-Type : application/octet-stream
+2018-09-04 23:03:18.710 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/table.js LoadTime：3
+2018-09-04 23:03:18.713 [Thread-31] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:19.041 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laytpl.js Content-Type : application/octet-stream
+2018-09-04 23:03:19.043 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laytpl.js LoadTime：2
+2018-09-04 23:03:19.044 [Thread-32] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:19.139 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laypage.js Content-Type : application/octet-stream
+2018-09-04 23:03:19.140 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laypage.js LoadTime：3
+2018-09-04 23:03:19.146 [Thread-33] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:19.160 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\layer.js Content-Type : application/octet-stream
+2018-09-04 23:03:19.162 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/layer.js LoadTime：2
+2018-09-04 23:03:19.172 [Thread-34] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:19.193 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\modules\layer\default\layer.css Content-Type : text/css
+2018-09-04 23:03:19.195 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/modules/layer/default/layer.css LoadTime：1
+2018-09-04 23:03:19.196 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\jquery.js Content-Type : application/octet-stream
+2018-09-04 23:03:19.197 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/jquery.js LoadTime：3
+2018-09-04 23:03:19.210 [Thread-35] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:19.223 [Thread-36] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:19.285 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\form.js Content-Type : application/octet-stream
+2018-09-04 23:03:19.286 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/form.js LoadTime：3
+2018-09-04 23:03:19.293 [Thread-37] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:19.351 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\util.js Content-Type : application/octet-stream
+2018-09-04 23:03:19.352 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/util.js LoadTime：3
+2018-09-04 23:03:19.360 [Thread-38] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:19.401 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\log.json Content-Type : application/octet-stream
+2018-09-04 23:03:19.403 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: log.json LoadTime：3
+2018-09-04 23:03:19.403 [Thread-39] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:03:19.416 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\font\iconfont.woff Content-Type : application/octet-stream
+2018-09-04 23:03:19.418 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/font/iconfont.woff LoadTime：3
+2018-09-04 23:03:19.425 [Thread-40] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:04:21.945 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+2018-09-04 23:04:21.954 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+2018-09-04 23:04:22.018 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+2018-09-04 23:04:22.019 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+2018-09-04 23:04:22.094 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+2018-09-04 23:04:22.098 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2018-09-04 23:04:22.098 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 8
+2018-09-04 23:04:22.101 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2018-09-04 23:04:22.109 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+2018-09-04 23:04:22.110 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2018-09-04 23:04:22.111 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+2018-09-04 23:04:22.112 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2018-09-04 23:04:22.112 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2018-09-04 23:04:22.112 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+2018-09-04 23:04:22.112 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2018-09-04 23:04:22.113 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\Administrator\AppData\Local\Temp (java.io.tmpdir)
+2018-09-04 23:04:22.114 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-09-04 23:04:22.116 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2018-09-04 23:04:22.116 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1883242496 bytes
+2018-09-04 23:04:22.116 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2018-09-04 23:04:22.117 [main] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+2018-09-04 23:04:22.141 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2018-09-04 23:04:22.595 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 10644 (auto-detected)
+2018-09-04 23:04:22.598 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2018-09-04 23:04:22.599 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2018-09-04 23:04:22.885 [main] DEBUG io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-09-04 23:04:22.894 [main] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2018-09-04 23:04:23.390 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 08:60:6e:ff:fe:1c:59:33 (auto-detected)
+2018-09-04 23:04:23.397 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2018-09-04 23:04:23.397 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2018-09-04 23:04:23.428 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2018-09-04 23:04:23.429 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2018-09-04 23:04:23.478 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+2018-09-04 23:04:23.488 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+2018-09-04 23:04:23.488 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+2018-09-04 23:04:23.488 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+2018-09-04 23:04:23.488 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+2018-09-04 23:04:23.489 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+2018-09-04 23:04:23.489 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+2018-09-04 23:04:23.489 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+2018-09-04 23:04:23.489 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2018-09-04 23:04:23.489 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+2018-09-04 23:04:23.489 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+2018-09-04 23:04:23.504 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+2018-09-04 23:04:23.504 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+2018-09-04 23:04:23.504 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2018-09-04 23:04:23.539 [main] INFO  cn.zyzpp.service.HttpServerStartup - Jerry server 8880 startup, Time 1607ms
+2018-09-04 23:04:23.543 [main] INFO  cn.zyzpp.service.HttpServerStartup - WEB_ROOT : D:\IDEA\workSpace\JerryServer\webapps
+2018-09-04 23:07:39.965 [nioEventLoopGroup-3-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.bytebuf.checkAccessible: true
+2018-09-04 23:07:39.968 [nioEventLoopGroup-3-2] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@77bea417
+2018-09-04 23:07:40.035 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2018-09-04 23:07:40.036 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2018-09-04 23:07:40.036 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+2018-09-04 23:07:40.036 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2018-09-04 23:07:40.085 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\index.html Content-Type : text/html
+2018-09-04 23:07:40.090 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: index.html LoadTime：4
+2018-09-04 23:07:40.092 [Thread-1] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:07:40.101 [nioEventLoopGroup-3-1] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibDecoder: false
+2018-09-04 23:07:40.101 [nioEventLoopGroup-3-1] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibEncoder: false
+2018-09-04 23:07:40.181 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 23:07:40.183 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：2
+2018-09-04 23:07:40.210 [Thread-2] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:07:40.215 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\layui.js Content-Type : application/octet-stream
+2018-09-04 23:07:40.217 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/layui.js LoadTime：5
+2018-09-04 23:07:40.243 [Thread-4] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:07:40.413 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\table.js Content-Type : application/octet-stream
+2018-09-04 23:07:40.415 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/table.js LoadTime：4
+2018-09-04 23:07:40.429 [Thread-5] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:07:40.776 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laytpl.js Content-Type : application/octet-stream
+2018-09-04 23:07:40.778 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laytpl.js LoadTime：3
+2018-09-04 23:07:40.787 [Thread-6] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:07:40.885 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laypage.js Content-Type : application/octet-stream
+2018-09-04 23:07:40.887 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laypage.js LoadTime：4
+2018-09-04 23:07:40.893 [Thread-7] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:07:40.911 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\layer.js Content-Type : application/octet-stream
+2018-09-04 23:07:40.913 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/layer.js LoadTime：3
+2018-09-04 23:07:40.920 [Thread-8] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:07:40.948 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\modules\layer\default\layer.css Content-Type : text/css
+2018-09-04 23:07:40.950 [nioEventLoopGroup-3-2] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/modules/layer/default/layer.css LoadTime：2
+2018-09-04 23:07:40.957 [Thread-9] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:07:40.960 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\jquery.js Content-Type : application/octet-stream
+2018-09-04 23:07:40.962 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/jquery.js LoadTime：4
+2018-09-04 23:07:40.968 [Thread-10] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:07:41.061 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\form.js Content-Type : application/octet-stream
+2018-09-04 23:07:41.063 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/form.js LoadTime：3
+2018-09-04 23:07:41.081 [Thread-11] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:07:41.109 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\util.js Content-Type : application/octet-stream
+2018-09-04 23:07:41.110 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/util.js LoadTime：3
+2018-09-04 23:07:41.112 [Thread-12] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:07:41.169 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\log.json Content-Type : application/octet-stream
+2018-09-04 23:07:41.170 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: log.json LoadTime：3
+2018-09-04 23:07:41.177 [Thread-13] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:07:41.189 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\font\iconfont.woff Content-Type : application/octet-stream
+2018-09-04 23:07:41.190 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/font/iconfont.woff LoadTime：3
+2018-09-04 23:07:41.208 [Thread-14] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:13:29.475 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\index.html Content-Type : text/html
+2018-09-04 23:13:29.477 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: index.html LoadTime：2
+2018-09-04 23:13:29.497 [Thread-15] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:13:29.554 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 23:13:29.555 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：2
+2018-09-04 23:13:29.558 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\layui.js Content-Type : application/octet-stream
+2018-09-04 23:13:29.560 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/layui.js LoadTime：2
+2018-09-04 23:13:29.602 [Thread-16] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:13:29.602 [Thread-17] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:13:29.757 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\table.js Content-Type : application/octet-stream
+2018-09-04 23:13:29.759 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/table.js LoadTime：4
+2018-09-04 23:13:29.763 [Thread-18] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:13:30.071 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laytpl.js Content-Type : application/octet-stream
+2018-09-04 23:13:30.073 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laytpl.js LoadTime：3
+2018-09-04 23:13:30.078 [Thread-19] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:13:30.170 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laypage.js Content-Type : application/octet-stream
+2018-09-04 23:13:30.172 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laypage.js LoadTime：4
+2018-09-04 23:13:30.178 [Thread-20] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:13:30.198 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\layer.js Content-Type : application/octet-stream
+2018-09-04 23:13:30.199 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/layer.js LoadTime：3
+2018-09-04 23:13:30.207 [Thread-21] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:13:30.236 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\modules\layer\default\layer.css Content-Type : text/css
+2018-09-04 23:13:30.238 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/modules/layer/default/layer.css LoadTime：2
+2018-09-04 23:13:30.246 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\jquery.js Content-Type : application/octet-stream
+2018-09-04 23:13:30.248 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/jquery.js LoadTime：3
+2018-09-04 23:13:30.254 [Thread-22] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:13:30.255 [Thread-23] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:13:30.346 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\form.js Content-Type : application/octet-stream
+2018-09-04 23:13:30.348 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/form.js LoadTime：3
+2018-09-04 23:13:30.357 [Thread-24] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:13:30.386 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\util.js Content-Type : application/octet-stream
+2018-09-04 23:13:30.388 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/util.js LoadTime：4
+2018-09-04 23:13:30.396 [Thread-25] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:13:30.450 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\log.json Content-Type : application/octet-stream
+2018-09-04 23:13:30.452 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: log.json LoadTime：3
+2018-09-04 23:13:30.459 [Thread-26] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:13:30.465 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\font\iconfont.woff Content-Type : application/octet-stream
+2018-09-04 23:13:30.466 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/font/iconfont.woff LoadTime：3
+2018-09-04 23:13:30.470 [Thread-27] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:13:40.650 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\ROOT\index.html Content-Type : text/html
+2018-09-04 23:13:40.780 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.jerry.JEResolver - Find JE File :index.html = index.html
+2018-09-04 23:13:40.785 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.jerry.JEConnection - Load Balance : http://localhost:8880/ROOT/json/data.json
+2018-09-04 23:13:40.838 [nioEventLoopGroup-3-5] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\ROOT\json\data.json Content-Type : application/octet-stream
+2018-09-04 23:13:40.841 [nioEventLoopGroup-3-5] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: ROOT File: json/data.json LoadTime：4
+2018-09-04 23:13:40.845 [Thread-28] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:13:40.861 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: ROOT File: index.html LoadTime：211
+2018-09-04 23:13:40.929 [Thread-29] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:13:40.932 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\ROOT\image\logo.png Content-Type : image/png
+2018-09-04 23:13:40.935 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: ROOT File: image/logo.png LoadTime：3
+2018-09-04 23:13:40.944 [Thread-30] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:13:55.417 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\ROOT\index.html Content-Type : text/html
+2018-09-04 23:13:55.419 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.jerry.JEResolver - Find JE File :index.html = index.html
+2018-09-04 23:13:55.425 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.jerry.JEConnection - Load Balance : http://localhost:8880/ROOT/json/data2.json
+2018-09-04 23:13:55.432 [nioEventLoopGroup-3-6] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\ROOT\json\data2.json Content-Type : application/octet-stream
+2018-09-04 23:13:55.435 [nioEventLoopGroup-3-6] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: ROOT File: json/data2.json LoadTime：4
+2018-09-04 23:13:55.436 [Thread-31] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:13:55.507 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: ROOT File: index.html LoadTime：90
+2018-09-04 23:13:55.507 [Thread-32] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:13:55.534 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\ROOT\image\logo.png Content-Type : image/png
+2018-09-04 23:13:55.540 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: ROOT File: image/logo.png LoadTime：6
+2018-09-04 23:13:55.549 [Thread-33] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:13:55.809 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\ROOT\image\favicon.ico Content-Type : image/x-icon
+2018-09-04 23:13:55.812 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: ROOT File: image/favicon.ico LoadTime：3
+2018-09-04 23:13:55.816 [Thread-34] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:14:02.525 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\ROOT\index.html Content-Type : text/html
+2018-09-04 23:14:02.527 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.jerry.JEResolver - Find JE File :index.html = index.html
+2018-09-04 23:14:02.528 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.jerry.JEConnection - Load Balance : http://localhost:8880/ROOT/json/data.json
+2018-09-04 23:14:02.537 [nioEventLoopGroup-3-7] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\ROOT\json\data.json Content-Type : application/octet-stream
+2018-09-04 23:14:02.540 [nioEventLoopGroup-3-7] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: ROOT File: json/data.json LoadTime：5
+2018-09-04 23:14:02.542 [Thread-35] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:14:02.546 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: ROOT File: index.html LoadTime：21
+2018-09-04 23:14:02.546 [Thread-36] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:14:02.570 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\ROOT\image\logo.png Content-Type : image/png
+2018-09-04 23:14:02.573 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: ROOT File: image/logo.png LoadTime：3
+2018-09-04 23:14:02.583 [Thread-37] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:14:02.760 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\ROOT\image\favicon.ico Content-Type : image/x-icon
+2018-09-04 23:14:02.763 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: ROOT File: image/favicon.ico LoadTime：2
+2018-09-04 23:14:02.769 [Thread-38] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:14:07.978 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\ROOT\index.html Content-Type : text/html
+2018-09-04 23:14:07.980 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.jerry.JEResolver - Find JE File :index.html = index.html
+2018-09-04 23:14:07.982 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.jerry.JEConnection - Load Balance : http://localhost:8880/ROOT/json/data2.json
+2018-09-04 23:14:07.992 [nioEventLoopGroup-3-8] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\ROOT\json\data2.json Content-Type : application/octet-stream
+2018-09-04 23:14:07.994 [nioEventLoopGroup-3-8] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: ROOT File: json/data2.json LoadTime：3
+2018-09-04 23:14:07.994 [Thread-39] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:14:08.002 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: ROOT File: index.html LoadTime：24
+2018-09-04 23:14:08.004 [Thread-40] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:14:08.026 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\ROOT\image\logo.png Content-Type : image/png
+2018-09-04 23:14:08.029 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: ROOT File: image/logo.png LoadTime：3
+2018-09-04 23:14:08.044 [Thread-41] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:14:08.227 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\ROOT\image\favicon.ico Content-Type : image/x-icon
+2018-09-04 23:14:08.230 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: ROOT File: image/favicon.ico LoadTime：2
+2018-09-04 23:14:08.234 [Thread-42] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:15:34.389 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+2018-09-04 23:15:34.397 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+2018-09-04 23:15:34.449 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+2018-09-04 23:15:34.449 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+2018-09-04 23:15:34.499 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+2018-09-04 23:15:34.502 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2018-09-04 23:15:34.503 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 8
+2018-09-04 23:15:34.505 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2018-09-04 23:15:34.506 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+2018-09-04 23:15:34.507 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2018-09-04 23:15:34.508 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+2018-09-04 23:15:34.510 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2018-09-04 23:15:34.510 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2018-09-04 23:15:34.510 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+2018-09-04 23:15:34.511 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2018-09-04 23:15:34.512 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\Administrator\AppData\Local\Temp (java.io.tmpdir)
+2018-09-04 23:15:34.512 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-09-04 23:15:34.515 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2018-09-04 23:15:34.515 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1883242496 bytes
+2018-09-04 23:15:34.516 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2018-09-04 23:15:34.517 [main] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+2018-09-04 23:15:34.539 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2018-09-04 23:15:35.054 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 11816 (auto-detected)
+2018-09-04 23:15:35.058 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2018-09-04 23:15:35.058 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2018-09-04 23:15:35.236 [main] DEBUG io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-09-04 23:15:35.239 [main] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2018-09-04 23:15:35.846 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 08:60:6e:ff:fe:1c:59:33 (auto-detected)
+2018-09-04 23:15:35.856 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2018-09-04 23:15:35.856 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2018-09-04 23:15:35.887 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2018-09-04 23:15:35.887 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2018-09-04 23:15:35.967 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+2018-09-04 23:15:35.973 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+2018-09-04 23:15:35.974 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+2018-09-04 23:15:35.975 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+2018-09-04 23:15:35.975 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+2018-09-04 23:15:35.975 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+2018-09-04 23:15:35.975 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+2018-09-04 23:15:35.975 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+2018-09-04 23:15:35.975 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2018-09-04 23:15:35.976 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+2018-09-04 23:15:35.976 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+2018-09-04 23:15:36.002 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+2018-09-04 23:15:36.002 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+2018-09-04 23:15:36.003 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2018-09-04 23:15:36.055 [main] INFO  cn.zyzpp.service.HttpServerStartup - Jerry server 8880 startup, Time 1687ms
+2018-09-04 23:15:36.057 [main] INFO  cn.zyzpp.service.HttpServerStartup - WEB_ROOT : D:\IDEA\workSpace\JerryServer\webapps
+2018-09-04 23:15:48.655 [nioEventLoopGroup-3-1] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.bytebuf.checkAccessible: true
+2018-09-04 23:15:48.656 [nioEventLoopGroup-3-1] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5ada32ea
+2018-09-04 23:15:48.682 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2018-09-04 23:15:48.682 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2018-09-04 23:15:48.683 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+2018-09-04 23:15:48.683 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2018-09-04 23:15:48.723 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\ROOT\index.html Content-Type : text/html
+2018-09-04 23:15:48.840 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.jerry.JEResolver - Find JE File :index.html = index.html
+2018-09-04 23:15:48.845 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.jerry.JEConnection - Load Balance : http://localhost:8880/ROOT/json/data.json
+2018-09-04 23:15:48.895 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\ROOT\json\data.json Content-Type : application/octet-stream
+2018-09-04 23:15:48.902 [nioEventLoopGroup-3-3] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: ROOT File: json/data.json LoadTime：7
+2018-09-04 23:15:48.907 [Thread-2] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:15:48.918 [nioEventLoopGroup-3-3] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibDecoder: false
+2018-09-04 23:15:48.918 [nioEventLoopGroup-3-3] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibEncoder: false
+2018-09-04 23:15:48.956 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: ROOT File: index.html LoadTime：232
+2018-09-04 23:15:48.978 [Thread-3] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:15:49.023 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\ROOT\image\logo.png Content-Type : image/png
+2018-09-04 23:15:49.026 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: ROOT File: image/logo.png LoadTime：4
+2018-09-04 23:15:49.043 [Thread-4] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:15:49.301 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\ROOT\image\favicon.ico Content-Type : image/x-icon
+2018-09-04 23:15:49.304 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: ROOT File: image/favicon.ico LoadTime：3
+2018-09-04 23:15:49.315 [Thread-5] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:15:54.123 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\template\404.html Content-Type : text/html
+2018-09-04 23:15:54.125 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: template File: 404.html LoadTime：2
+2018-09-04 23:15:54.126 [Thread-6] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:19:21.939 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\index.html Content-Type : text/html
+2018-09-04 23:19:21.940 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: index.html LoadTime：2
+2018-09-04 23:19:21.947 [Thread-7] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:19:21.999 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 23:19:22.001 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：2
+2018-09-04 23:19:22.014 [Thread-8] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:19:22.091 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\layui.js Content-Type : application/octet-stream
+2018-09-04 23:19:22.092 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/layui.js LoadTime：3
+2018-09-04 23:19:22.130 [Thread-9] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:19:22.242 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\table.js Content-Type : application/octet-stream
+2018-09-04 23:19:22.244 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/table.js LoadTime：3
+2018-09-04 23:19:22.253 [Thread-10] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:19:22.567 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laytpl.js Content-Type : application/octet-stream
+2018-09-04 23:19:22.569 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laytpl.js LoadTime：3
+2018-09-04 23:19:22.581 [Thread-11] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:19:22.695 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laypage.js Content-Type : application/octet-stream
+2018-09-04 23:19:22.697 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laypage.js LoadTime：2
+2018-09-04 23:19:22.701 [Thread-12] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:19:22.717 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\layer.js Content-Type : application/octet-stream
+2018-09-04 23:19:22.719 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/layer.js LoadTime：3
+2018-09-04 23:19:22.728 [Thread-13] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:19:22.746 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\modules\layer\default\layer.css Content-Type : text/css
+2018-09-04 23:19:22.748 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/modules/layer/default/layer.css LoadTime：1
+2018-09-04 23:19:22.751 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\jquery.js Content-Type : application/octet-stream
+2018-09-04 23:19:22.753 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/jquery.js LoadTime：3
+2018-09-04 23:19:22.757 [Thread-14] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:19:22.760 [Thread-15] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:19:22.853 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\form.js Content-Type : application/octet-stream
+2018-09-04 23:19:22.855 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/form.js LoadTime：3
+2018-09-04 23:19:22.863 [Thread-16] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:19:22.894 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\util.js Content-Type : application/octet-stream
+2018-09-04 23:19:22.896 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/util.js LoadTime：3
+2018-09-04 23:19:22.907 [Thread-17] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:19:22.961 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\log.json Content-Type : application/octet-stream
+2018-09-04 23:19:22.962 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: log.json LoadTime：3
+2018-09-04 23:19:22.965 [Thread-18] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:19:22.975 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\font\iconfont.woff Content-Type : application/octet-stream
+2018-09-04 23:19:22.977 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/font/iconfont.woff LoadTime：3
+2018-09-04 23:19:22.983 [Thread-19] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:19:40.897 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 23:19:40.899 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：1
+2018-09-04 23:19:40.899 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\modules\layer\default\layer.css Content-Type : text/css
+2018-09-04 23:19:40.901 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/modules/layer/default/layer.css LoadTime：1
+2018-09-04 23:19:40.912 [Thread-20] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:19:40.913 [Thread-21] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:20:13.534 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\index.html Content-Type : text/html
+2018-09-04 23:20:13.535 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: index.html LoadTime：2
+2018-09-04 23:20:13.536 [Thread-22] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:20:13.585 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 23:20:13.587 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：1
+2018-09-04 23:20:13.589 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\layui.js Content-Type : application/octet-stream
+2018-09-04 23:20:13.590 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/layui.js LoadTime：3
+2018-09-04 23:20:13.598 [Thread-23] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:20:13.601 [Thread-24] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:20:13.748 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\table.js Content-Type : application/octet-stream
+2018-09-04 23:20:13.750 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/table.js LoadTime：3
+2018-09-04 23:20:13.771 [Thread-25] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:20:14.079 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laytpl.js Content-Type : application/octet-stream
+2018-09-04 23:20:14.081 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laytpl.js LoadTime：3
+2018-09-04 23:20:14.082 [Thread-26] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:20:14.191 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laypage.js Content-Type : application/octet-stream
+2018-09-04 23:20:14.193 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laypage.js LoadTime：3
+2018-09-04 23:20:14.198 [Thread-27] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:20:14.218 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\layer.js Content-Type : application/octet-stream
+2018-09-04 23:20:14.220 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/layer.js LoadTime：3
+2018-09-04 23:20:14.226 [Thread-28] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:20:14.251 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\modules\layer\default\layer.css Content-Type : text/css
+2018-09-04 23:20:14.253 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/modules/layer/default/layer.css LoadTime：2
+2018-09-04 23:20:14.255 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\jquery.js Content-Type : application/octet-stream
+2018-09-04 23:20:14.257 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/jquery.js LoadTime：3
+2018-09-04 23:20:14.267 [Thread-29] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:20:14.269 [Thread-30] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:20:14.351 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\form.js Content-Type : application/octet-stream
+2018-09-04 23:20:14.352 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/form.js LoadTime：3
+2018-09-04 23:20:14.364 [Thread-31] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:20:14.387 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\util.js Content-Type : application/octet-stream
+2018-09-04 23:20:14.388 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/util.js LoadTime：3
+2018-09-04 23:20:14.389 [Thread-32] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:20:14.444 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\log.json Content-Type : application/octet-stream
+2018-09-04 23:20:14.446 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: log.json LoadTime：3
+2018-09-04 23:20:14.446 [Thread-33] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:20:14.461 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\font\iconfont.woff Content-Type : application/octet-stream
+2018-09-04 23:20:14.463 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/font/iconfont.woff LoadTime：2
+2018-09-04 23:20:14.465 [Thread-34] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:21:00.981 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\font\iconfont.woff Content-Type : application/octet-stream
+2018-09-04 23:21:00.982 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/font/iconfont.woff LoadTime：3
+2018-09-04 23:21:00.991 [Thread-35] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:21:02.867 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\font\iconfont.woff Content-Type : application/octet-stream
+2018-09-04 23:21:02.869 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/font/iconfont.woff LoadTime：2
+2018-09-04 23:21:02.870 [Thread-36] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:21:05.012 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\font\iconfont.woff Content-Type : application/octet-stream
+2018-09-04 23:21:05.013 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/font/iconfont.woff LoadTime：3
+2018-09-04 23:21:05.017 [Thread-37] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:21:05.323 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\font\iconfont.woff Content-Type : application/octet-stream
+2018-09-04 23:21:05.324 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/font/iconfont.woff LoadTime：3
+2018-09-04 23:21:05.329 [Thread-38] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:21:09.413 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\font\iconfont.woff Content-Type : application/octet-stream
+2018-09-04 23:21:09.415 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/font/iconfont.woff LoadTime：2
+2018-09-04 23:21:09.415 [Thread-39] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:21:40.534 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\index.html Content-Type : text/html
+2018-09-04 23:21:40.535 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: index.html LoadTime：1
+2018-09-04 23:21:40.543 [Thread-40] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:21:40.584 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 23:21:40.586 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：2
+2018-09-04 23:21:40.589 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\layui.js Content-Type : application/octet-stream
+2018-09-04 23:21:40.591 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/layui.js LoadTime：2
+2018-09-04 23:21:40.599 [Thread-41] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:21:40.601 [Thread-42] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:21:40.689 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\table.js Content-Type : application/octet-stream
+2018-09-04 23:21:40.690 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/table.js LoadTime：3
+2018-09-04 23:21:40.692 [Thread-43] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:21:40.907 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laytpl.js Content-Type : application/octet-stream
+2018-09-04 23:21:40.908 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laytpl.js LoadTime：3
+2018-09-04 23:21:40.909 [Thread-44] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:21:40.965 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laypage.js Content-Type : application/octet-stream
+2018-09-04 23:21:40.966 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laypage.js LoadTime：3
+2018-09-04 23:21:40.967 [Thread-45] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:21:40.979 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\layer.js Content-Type : application/octet-stream
+2018-09-04 23:21:40.981 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/layer.js LoadTime：2
+2018-09-04 23:21:40.983 [Thread-46] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:21:40.996 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\modules\layer\default\layer.css Content-Type : text/css
+2018-09-04 23:21:40.998 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/modules/layer/default/layer.css LoadTime：2
+2018-09-04 23:21:40.999 [Thread-47] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:21:41.002 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\jquery.js Content-Type : application/octet-stream
+2018-09-04 23:21:41.003 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/jquery.js LoadTime：4
+2018-09-04 23:21:41.005 [Thread-48] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:21:41.061 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\form.js Content-Type : application/octet-stream
+2018-09-04 23:21:41.063 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/form.js LoadTime：4
+2018-09-04 23:21:41.075 [Thread-49] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:21:41.090 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\util.js Content-Type : application/octet-stream
+2018-09-04 23:21:41.091 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/util.js LoadTime：2
+2018-09-04 23:21:41.092 [Thread-50] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:21:41.128 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\log.json Content-Type : application/octet-stream
+2018-09-04 23:21:41.130 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: log.json LoadTime：2
+2018-09-04 23:21:41.130 [Thread-51] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:21:41.145 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\font\iconfont.woff Content-Type : application/octet-stream
+2018-09-04 23:21:41.147 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/font/iconfont.woff LoadTime：3
+2018-09-04 23:21:41.151 [Thread-52] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:21:48.808 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 23:21:48.809 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：2
+2018-09-04 23:21:48.810 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\modules\layer\default\layer.css Content-Type : text/css
+2018-09-04 23:21:48.811 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/modules/layer/default/layer.css LoadTime：1
+2018-09-04 23:21:48.821 [Thread-53] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:21:48.824 [Thread-54] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:22:10.397 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\index.html Content-Type : text/html
+2018-09-04 23:22:10.398 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: index.html LoadTime：2
+2018-09-04 23:22:10.399 [Thread-55] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:22:10.437 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\layui.css Content-Type : text/css
+2018-09-04 23:22:10.439 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/layui.css LoadTime：1
+2018-09-04 23:22:10.443 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\layui.js Content-Type : application/octet-stream
+2018-09-04 23:22:10.444 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/layui.js LoadTime：3
+2018-09-04 23:22:10.453 [Thread-56] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:22:10.453 [Thread-57] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:22:10.554 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\table.js Content-Type : application/octet-stream
+2018-09-04 23:22:10.556 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/table.js LoadTime：3
+2018-09-04 23:22:10.557 [Thread-58] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:22:10.754 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laytpl.js Content-Type : application/octet-stream
+2018-09-04 23:22:10.756 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laytpl.js LoadTime：2
+2018-09-04 23:22:10.787 [Thread-59] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:22:10.820 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\laypage.js Content-Type : application/octet-stream
+2018-09-04 23:22:10.822 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/laypage.js LoadTime：2
+2018-09-04 23:22:10.830 [Thread-60] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:22:10.839 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\layer.js Content-Type : application/octet-stream
+2018-09-04 23:22:10.840 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/layer.js LoadTime：2
+2018-09-04 23:22:10.841 [Thread-61] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:22:10.856 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\css\modules\layer\default\layer.css Content-Type : text/css
+2018-09-04 23:22:10.857 [nioEventLoopGroup-3-1] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/css/modules/layer/default/layer.css LoadTime：2
+2018-09-04 23:22:10.860 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\jquery.js Content-Type : application/octet-stream
+2018-09-04 23:22:10.860 [Thread-62] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:22:10.862 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/jquery.js LoadTime：3
+2018-09-04 23:22:10.865 [Thread-63] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:22:10.915 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\form.js Content-Type : application/octet-stream
+2018-09-04 23:22:10.916 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/form.js LoadTime：3
+2018-09-04 23:22:10.923 [Thread-64] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:22:10.938 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\lay\modules\util.js Content-Type : application/octet-stream
+2018-09-04 23:22:10.939 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/lay/modules/util.js LoadTime：2
+2018-09-04 23:22:10.939 [Thread-65] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:22:10.977 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\log.json Content-Type : application/octet-stream
+2018-09-04 23:22:10.979 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: log.json LoadTime：2
+2018-09-04 23:22:10.985 [Thread-66] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程
+2018-09-04 23:22:10.994 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - Find a request : D:\IDEA\workSpace\JerryServer\webapps\manage\layui\font\iconfont.woff Content-Type : application/octet-stream
+2018-09-04 23:22:10.995 [nioEventLoopGroup-3-4] DEBUG cn.zyzpp.http.JerryResponse - ProjectName: manage File: layui/font/iconfont.woff LoadTime：3
+2018-09-04 23:22:10.997 [Thread-67] INFO  cn.zyzpp.monitor.thread.LogThread - 我是一条线程

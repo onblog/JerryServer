@@ -1,0 +1,25 @@
+{
+	"message": "响应成功",
+	"nu": "11111111111",
+	"ischeck": "0",
+	"condition": "B00",
+	"com": "yuantong",
+	"status": "200",
+	"state": {
+		"message": "ok",
+		"nu": "我来自接口1",
+		"ischeck": "0"
+	},
+	"data": [{
+		"time": "2018-04-25 13:25:07",
+		"ftime": "2018-04-25 13:25:07",
+		"context": "你知道数组吗",
+		"location": null
+	}, {
+		"time": "2018-04-25 13:25:07",
+		"ftime": "2018-04-25 13:25:07",
+		"context": "context",
+		"location": null
+	}]
+
+}
