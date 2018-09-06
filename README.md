@@ -68,11 +68,11 @@ Jerry 渲染HTML页面的语法类似EL表达式。形如：`${字段名}`，我
 }
 ```
 
-如果我们想获取 message的值渲染到html页面，只需要在html页面写入：${message}
+如果我们想获取 message的值渲染到html页面，只需要在html页面写入：`${message}`
 
-对于state对象里的message，可以写入：${state.message}
+对于state对象里的message，可以写入：`${state.message}`
 
-对于data数组对象里的time值，可以写入：${data[0].time}
+对于data数组对象里的time值，可以写入：`${data[0].time}`
 
 值得一提的是，JE暂时不支持if else，while等语法，这将是下一个版本的首要解决问题。
 
@@ -136,7 +136,7 @@ Jerry把所有的web项目与页面都放在了webapps下，服务器也只会�
 3. 接口配置文件的编码就是page.json文件的读取时的编码格式。默认utf-8
 4. 监控刷新频率。最低为1s，默认10s。
 5. 上面缓存的意思是在有效的600秒(10分钟)内，如果连续120秒(2分钟)未访问缓存，则缓存失效。就算有访问，也只会存活600秒。
-6. 当你想查看运行日志时，切换器debug即可。默认info。
+6. 当你想查看运行日志时，切换为debug即可。默认info。
 
 ## 9、接口配置
 
