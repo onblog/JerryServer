@@ -280,9 +280,9 @@ Github：<https://github.com/yueshutong/JerryServer/>
 
 开源中国：https://www.oschina.net/p/jerryserver
 
-<img src="./picture/1532688969.png" width = "250" height = "250" />
+<img src="./picture/1532688969.png" width = "250px" height = "250px" />
 
-<img src="./picture/1532689462.png" width = "250" height = "250" />
+<img src="./picture/1532689462.png" width = "250px" height = "250px" />
 
 
 > 如果觉得还不错，请我喝杯茶吧！
