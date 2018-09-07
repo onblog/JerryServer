@@ -36,7 +36,7 @@ public class FreeMark {
             Template t = cfg.getTemplate(path);
             //在模版上执行插值操作，并输出到制定的输出流中
             ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(byteArrayOutputStream);
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(byteArrayOutputStream,HttpServerConfig.fm_charset);
             t.process(map, outputStreamWriter);
             //关闭流
             outputStreamWriter.close();
