@@ -129,7 +129,7 @@ timeToIdleSeconds=120
 #缓存:最大存活时间(秒/s)
 timeToLiveSeconds=600
 #控制台日志级别INFO/DEBUG
-level=DEBUG
+level=INFO
 ```
 
 Jerry把所有的web项目与页面都放在了webapps下，服务器也只会响应webapps目录下的文件。
