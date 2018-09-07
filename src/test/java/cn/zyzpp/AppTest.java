@@ -8,7 +8,11 @@ import org.junit.Test;
 public class AppTest {
 
     @Test
-    public void test() {
+    public void test(){
+//        IContext iContext = new Context();
+//
+//        TemplateEngine templateEngine = new TemplateEngine();
+//        templateEngine.process();
     }
 
 }

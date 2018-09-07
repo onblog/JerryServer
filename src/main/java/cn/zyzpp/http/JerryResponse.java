@@ -13,15 +13,8 @@ import io.netty.handler.codec.http.FullHttpResponse;
 import io.netty.handler.codec.http.HttpResponseStatus;
 import io.netty.handler.codec.http.HttpVersion;
 import net.sf.ehcache.Element;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.select.Elements;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.io.File;
-import java.io.IOException;
-import java.nio.charset.Charset;
 
 /**
  * Create by yster@foxmail.com 2018-05-04
@@ -106,8 +99,7 @@ public class JerryResponse {
         //Is JE File ?
         byte[] responseBody;
         if (resolver.judge()) {
-            Charset charset = getCharset(request);//JE File Charset
-            responseBody = resolver.parse(IOUtil.readFile(request.getUri(), charset)).getBytes(charset);
+            responseBody = resolver.parse(request.getProject()+"/"+request.getFilePath());
             buf = Unpooled.copiedBuffer(responseBody);
         } else {
             responseBody = IOUtil.readFileToByte(request.getUri());
@@ -116,26 +108,6 @@ public class JerryResponse {
 
         MyCache.cache.put(new Element(request.getUri(), responseBody));//cache
         return buf;
-    }
-
-    /**
-     * 获取JE文件编码
-     *
-     * @param request
-     * @return
-     */
-    private Charset getCharset(JerryRequest request) {
-        try {
-            Document doc = Jsoup.parse(new File(request.getUri()), "UTF-8", "");
-            Elements select = doc.select("meta[charset]");
-            if (!select.isEmpty()) {
-                String charset = select.first().attr("charset");
-                return Charset.forName(charset);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return Charset.forName("UTF-8");
     }
 
 }

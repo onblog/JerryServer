@@ -1,5 +1,6 @@
 package cn.zyzpp.jerry;
 
+import cn.zyzpp.template.FreeMark;
 import cn.zyzpp.config.HttpServerConfig;
 import cn.zyzpp.entity.EntityJson;
 import cn.zyzpp.http.JerryRequest;
@@ -30,6 +31,7 @@ public class JEResolver {
 
     /**
      * 判断项目根目录下是否有Page.json配置文件
+     *
      * @param request
      */
     private void setJData(JerryRequest request) {
@@ -40,32 +42,24 @@ public class JEResolver {
         } catch (Exception e) {
             logger.error("get project name failed !");
         }
-        this.JData = IOUtil.readFile(HttpServerConfig.WEB_ROOT +File.separator+ project + File.separator + HttpServerConfig.Config_Json,HttpServerConfig.charset);
+        this.JData = IOUtil.readFile(HttpServerConfig.WEB_ROOT + File.separator + project + File.separator + HttpServerConfig.Config_Json, HttpServerConfig.js_charset);
     }
 
     /**
-     * 处理含JE语法页面的对外接口
+     * 处理含有语法的页面
      *
-     * @param responseBody
+     * @param path
      * @return
      */
-    public String parse(String responseBody) {
-        if (responseBody == null) {
-            return null;
-        }
+    public byte[] parse(String path) {
         //网络代理请求json转为Map对象
         Map<Integer, Object> map = JEConnection.connPort(request.getFilePath(), JData);
-        String body = responseBody;
+        byte[] page = null;
         for (int key : map.keySet()) {
-            Map<String, Object> jmap = (Map<String, Object>) map.get(key);
-            try {
-                body = JEArithmetic.replace(body, jmap);    //JE核心算法
-            } catch (Exception e) {
-                logger.error("JE Page syntax error, please check the page");
-                e.printStackTrace();
-            }
+            Map<String, Object> objectMap = (Map<String, Object>) map.get(key);
+            page = FreeMark.resolve(objectMap, path);
         }
-        return body;
+        return page;
 
     }
 
@@ -82,7 +76,7 @@ public class JEResolver {
         List<EntityJson> entity = JSON.parseArray(JData, EntityJson.class);
         for (EntityJson en : entity) {
             if (request.getFilePath().equalsIgnoreCase(en.getPage())) {
-                logger.debug("Find JE File :"+request.getFilePath()+" = "+en.getPage());
+                logger.debug("Find JE File :" + request.getFilePath() + " = " + en.getPage());
                 return true;
             }
         }

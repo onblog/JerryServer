@@ -1,4 +1,4 @@
-# Jerry Server 开发文档
+# Jerry Server 升级版 开发文档
 
 ![](./picture/1536240835611.png)
 ## 1、Jerry 为何而生
@@ -44,12 +44,13 @@
    - ehcache
    - jsoup
    - junit4
+   - freemark
 
 3. 自带监控系统。对页面的响应速度以及HTTP信息一览无遗。
 
-## 5、Jerry 语法
+## 5、FreeMark
 
-Jerry 渲染HTML页面的语法类似EL表达式。形如：`${字段名}`，我们称之为JE表达式。
+Jerry 使用FreeMark作为模板引擎。也就是说，原来需要后端工程师使用freemark去渲染页面，现在变为前端工程师去使用。在这一点，Jerry没有重复造轮子，而是吸收兼并了FreeMark的优势。
 
 例如，服务端的JSON数据为：
 
@@ -74,7 +75,7 @@ Jerry 渲染HTML页面的语法类似EL表达式。形如：`${字段名}`，我
 
 对于data数组对象里的time值，可以写入：`${data[0].time}`
 
-值得一提的是，JE暂时不支持if else，while等语法，这将是下一个版本的首要解决问题。
+其它用法请参考FreeMark学习网站：[FreeMark开发手册](http://freemarker.foofun.cn/)
 
 ## 6、监控系统
 
@@ -109,24 +110,26 @@ port=8888
 index=index.html
 #默认项目
 project=ROOT
-#全局404模板（webapps/）
+#全局404模板(webapps/)
 404=/template/404.html
 #接口配置文件名，要求内容为Json
 config=page.json
 #接口配置文件的编码
-charset=UTF-8
+js_charset=UTF-8
+#freemark文件编码
+fm_charset=UTF-8
 #监控刷新频率(毫秒/ms)
 monitor=10000
-#监控文件目录（webapps/）
+#监控文件目录(webapps/)
 monitorLog=/manage/log.json
-#缓存：最大存储元素个数
+#缓存:最大存储元素个数
 maxElementsInMemory=10000
-#缓存：最大发呆时间(秒/s)
+#缓存:最大发呆时间(秒/s)
 timeToIdleSeconds=120
-#缓存：最大存活时间(秒/s)
+#缓存:最大存活时间(秒/s)
 timeToLiveSeconds=600
 #控制台日志级别INFO/DEBUG
-level=INFO
+level=DEBUG
 ```
 
 Jerry把所有的web项目与页面都放在了webapps下，服务器也只会响应webapps目录下的文件。
@@ -134,9 +137,10 @@ Jerry把所有的web项目与页面都放在了webapps下，服务器也只会�
 1. 关于全局404模板，默认即可。不过也支持自定义。
 2. 关于接口配置文件，默认page.json。你可以自定义，但一定必须是json内容，而且位于项目根目录下（如ROOT/page.json）。
 3. 接口配置文件的编码就是page.json文件的读取时的编码格式。默认utf-8
-4. 监控刷新频率。最低为1s，默认10s。
-5. 上面缓存的意思是在有效的600秒(10分钟)内，如果连续120秒(2分钟)未访问缓存，则缓存失效。就算有访问，也只会存活600秒。
-6. 当你想查看运行日志时，切换为debug即可。默认info。
+4. freemark文件编码是设置处理freemark文件的编码。
+5. 监控刷新频率。最低为1s，默认10s。
+6. 上面缓存的意思是在有效的600秒(10分钟)内，如果连续120秒(2分钟)未访问缓存，则缓存失效。就算有访问，也只会存活600秒。
+7. 当你想查看运行日志时，切换为debug即可。默认info。
 
 ## 9、接口配置
 
@@ -184,13 +188,15 @@ Jerry把所有的web项目与页面都放在了webapps下，服务器也只会�
 | 属性    | 说明                                      |
 | ------- | ----------------------------------------- |
 | page    | HTML文件路径。如配置xxx相当于：项目名/xxx |
-| id      | ID名称。要求同一个page一定要有不同的id。  |
+| id      | ID名称。要求相同的page不得有相同额id      |
 | method  | 对后端接口发起请求时的方法。              |
 | timeout | 对后端接口发起请求的超时时间。            |
 | header  | 对后端接口发起请求时的header。            |
 | inter   | 后端接口对象，可以定义多个实现负载均衡。  |
 | link    | 后端接口实际地址。                        |
 | weight  | 权重，用于负载均衡。                      |
+
+Jerry升级后，采用FreeMark作为模板引擎，一个（FreeMark）HTML文件只能有一个page配置。
 
 ## 10、一些其它问题
 
@@ -204,9 +210,9 @@ Jerry把所有的web项目与页面都放在了webapps下，服务器也只会�
 
 ### 2、关于编码
 
-对于不需要JE处理的HTML文件来说，不涉及编码问题。
+对于不需要语法处理的HTML文件来说，不涉及编码问题。
 
-对于需要JE处理的HTML文件，你在HTML文件中声明的`<meta charset="UTF-8">`关乎如何解析你的文件。若出现乱码，请检查你的HTML文件。
+对于需要语法处理的HTML文件，统一配置在config配置文件。若出现乱码，请检查你的配置。
 
 ### 3、如何启动
 
@@ -221,7 +227,7 @@ Jerry把所有的web项目与页面都放在了webapps下，服务器也只会�
 Linux系统如使其在后台运行，在末尾加个`&`即可。
 
 然后使用的问题，一般来说，只需要把web项目放到webapps下，项目根目录新建page.json接口配置即可。
-关于接口配置详细参数上面已经说明。然后在HTML页面使用JE表达式获取后端数据。例子：
+关于接口配置详细参数上面已经说明。然后在HTML页面使用FreeMark语法获取后端数据。例子：
 
 API接口：
 ```
@@ -241,7 +247,11 @@ HTML页面：
     data[0].time：${data[0].time}
 </p>
 ```
-详见JE表达式用法。
+### 4、是不是造Nginx的轮子
+
+关于这一点很明确，不是。来看下面的流程图：
+
+![1536325082791](./picture/1536325082791.png)
 
 ## 11、尾声
 

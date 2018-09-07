@@ -164,7 +164,7 @@ public class JerryRequest {
         boolean ready = false;
         StringTokenizer tokenizer = new StringTokenizer(getUri(), File.separator);
         while (tokenizer.hasMoreTokens()) {
-            if (tokenizer.nextToken().equalsIgnoreCase(HttpServerConfig.WEBAPPS)) {
+            if (tokenizer.nextToken().equalsIgnoreCase(HttpServerConfig.WEB_NAME)) {
                 ready = true;
             }
             if (ready) {

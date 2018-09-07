@@ -19,11 +19,11 @@ import java.util.Properties;
  **/
 public class HttpServerConfig {
 
-    public static final String WEBAPPS = "webapps";
+    public static final String WEB_NAME = "webapps";
     /**
      * WEB_ROOT不是以分隔符结尾的
      */
-    public static final String WEB_ROOT = ProjectPath.getRootPath(WEBAPPS);
+    public static final String WEB_ROOT = ProjectPath.getRootPath(WEB_NAME);
 
     private static final String CONFIG = ProjectPath.getRootPath("config\\config.properties");
 
@@ -41,7 +41,9 @@ public class HttpServerConfig {
 
     public static String MONITOR_LOG;
 
-    public static Charset charset;
+    public static Charset js_charset;
+
+    public static Charset fm_charset;
 
     public static int maxElementsInMemory;
 
@@ -55,7 +57,7 @@ public class HttpServerConfig {
         try {
             prop = new Properties();
             prop.load(new InputStreamReader(new FileInputStream(CONFIG),"UTF-8"));
-            prop.list(System.out);
+//            prop.list(System.out);
 
             MONITOR_LOG = WEB_ROOT + getMonitorLog();
             NO_FOUND = WEB_ROOT + getDefault404();
@@ -67,7 +69,8 @@ public class HttpServerConfig {
             maxElementsInMemory = getMaxElementsInMemory();
             timeToIdleSeconds = getTimeToIdleSeconds();
             timeToLiveSeconds = getTimeToLiveSeconds();
-            charset = getCharset();
+            js_charset = getJs_charset();
+            fm_charset = getFmCharset();
             setLogLevel();
         } catch (IOException e) {
             e.printStackTrace();
@@ -226,18 +229,31 @@ public class HttpServerConfig {
         return 600;
     }
     /**
-     * JE文件的默认编码
-     *
+     * 接口配置的默认编码
      * @return
      */
-    private static Charset getCharset() {
+    private static Charset getJs_charset() {
         try {
-            return Charset.forName(prop.getProperty("charset"));
+            return Charset.forName(prop.getProperty("js_charset"));
         } catch (Exception e) {
             e.printStackTrace();
         }
         return Charset.forName("UTF-8");
     }
+
+    /**
+     * Freemark的默认编码
+     * @return
+     */
+    private static Charset getFmCharset() {
+        try {
+            return Charset.forName(prop.getProperty("fm_charset"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return Charset.forName("UTF-8");
+    }
+
     /**
      * 日志级别
      * 默认INFO

@@ -37,6 +37,8 @@ public class JEConnection {
                 Map<String, Object> object = JSON.parseObject(receive);
                 //加到map里
                 map.put(en.hashCode(), object);
+                //只加载第一条接口配置
+                break;
             }
         }
         return map;
