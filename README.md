@@ -279,3 +279,12 @@ Gitee：<https://gitee.com/zyzpp/JerryServer>
 Github：<https://github.com/yueshutong/JerryServer/> 
 
 开源中国：https://www.oschina.net/p/jerryserver
+
+
+
+> 如果觉得还不错，请我喝杯茶吧！
+
+<img src="./picture/1532688969.png" width = "100" height = "100" div align=left />
+扫一扫
+<img src="./picture/1532689462.png" width = "100" height = "100" div align=right />
+
