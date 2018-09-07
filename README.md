@@ -284,7 +284,7 @@ Github：<https://github.com/yueshutong/JerryServer/>
 
 > 如果觉得还不错，请我喝杯茶吧！
 
-<img src="./picture/1532688969.png" width = "100" height = "100" div align=left />
+<img src="./picture/1532688969.png" width = "100" height = "100" div align=center />
 扫一扫
-<img src="./picture/1532689462.png" width = "100" height = "100" div align=right />
+<img src="./picture/1532689462.png" width = "100" height = "100" div align=center />
 
