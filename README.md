@@ -188,7 +188,7 @@ Jerry把所有的web项目与页面都放在了webapps下，服务器也只会�
 | 属性    | 说明                                      |
 | ------- | ----------------------------------------- |
 | page    | HTML文件路径。如配置xxx相当于：项目名/xxx |
-| id      | ID名称。要求相同的page不得有相同额id      |
+| id      | ID名称。要求相同的page不得有相同的id。      |
 | method  | 对后端接口发起请求时的方法。              |
 | timeout | 对后端接口发起请求的超时时间。            |
 | header  | 对后端接口发起请求时的header。            |
@@ -196,7 +196,7 @@ Jerry把所有的web项目与页面都放在了webapps下，服务器也只会�
 | link    | 后端接口实际地址。                        |
 | weight  | 权重，用于负载均衡。                      |
 
-Jerry升级后，采用FreeMark作为模板引擎，一个（FreeMark）HTML文件只能有一个page配置。
+Jerry升级后，采用FreeMark作为模板引擎，一个（FreeMark）HTML文件只能有一个配置，也就是说，page的值不得相同。
 
 ## 10、一些其它问题
 
