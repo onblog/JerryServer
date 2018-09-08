@@ -280,6 +280,8 @@ Github：<https://github.com/yueshutong/JerryServer/>
 
 开源中国：https://www.oschina.net/p/jerryserver
 
+<img src="./picture/qrcode_1536386595566.jpg" style="width:200px">
+
 <img src="./picture/1532688969.png" width = "250px" height = "250px" />
 
 <img src="./picture/1532689462.png" width = "250px" height = "250px" />
