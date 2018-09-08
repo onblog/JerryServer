@@ -68,6 +68,7 @@ public class JEConnection {
             receive = JsoupConn.receive(en, url);
             if (receive == null) {
                 //记录不可用接口
+                logger.info("The record is unavailable to the interface : "+url);
                 loadBalance.interError(en, url);
             }
         }
