@@ -64,6 +64,13 @@
             <version>4.10</version>
             <scope>test</scope>
         </dependency>
+        <!--判断JSON类型-->
+        <dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <version>2.4</version>
+            <classifier>jdk15</classifier>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

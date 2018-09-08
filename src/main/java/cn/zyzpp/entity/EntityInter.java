@@ -10,6 +10,11 @@ public class EntityInter {
     public EntityInter() {
     }
 
+    public EntityInter(String link, int weight) {
+        this.link = link;
+        this.weight = weight;
+    }
+
     public String getLink() {
         return link;
     }

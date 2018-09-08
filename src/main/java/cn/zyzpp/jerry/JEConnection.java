@@ -5,6 +5,7 @@ import cn.zyzpp.connect.JsoupConn;
 import cn.zyzpp.entity.EntityJson;
 import cn.zyzpp.exception.CustomException;
 import com.alibaba.fastjson.JSON;
+import net.sf.json.util.JSONTokener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -31,12 +32,19 @@ public class JEConnection {
         List<EntityJson> entity = JSON.parseArray(JData, EntityJson.class);
         for (EntityJson en : entity) {
             if (filePath.equalsIgnoreCase(en.getPage())) {
-                //代理请求
+                //代理请求，得到响应字符串
                 String receive = getProxyData(en);
-                //json转换为Map对象
-                Map<String, Object> object = JSON.parseObject(receive);
-                //加到map里
-                map.put(en.hashCode(), object);
+                //判断json对象的类型
+                Object value = new JSONTokener(receive).nextValue();
+                if(value instanceof net.sf.json.JSONObject){
+                    Map<String,Object> object = (Map<String, Object>) value;
+                    //加到map里
+                    map.put(en.hashCode(), object);
+                }else if (value instanceof net.sf.json.JSONArray){
+                    List<Object> object = (List<Object>) value;
+                    //加到map里
+                    map.put(en.hashCode(), object);
+                }
                 //只加载第一条接口配置
                 break;
             }
