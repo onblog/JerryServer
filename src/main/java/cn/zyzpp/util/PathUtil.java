@@ -13,9 +13,9 @@ public class PathUtil {
 
     static {
         //打包为jar时的路径
-//        projectPath =  System.getProperty("user.dir") + File.separator;
+        projectPath =  System.getProperty("user.dir") + File.separator;
         //直接运行main方法的路径
-        projectPath = System.getProperty("user.dir").substring(0,System.getProperty("user.dir").lastIndexOf(File.separator))+File.separator+"JerryServer"+File.separator;
+//        projectPath = System.getProperty("user.dir").substring(0,System.getProperty("user.dir").lastIndexOf(File.separator))+File.separator+"JerryServer"+File.separator;
     }
 
     /**
