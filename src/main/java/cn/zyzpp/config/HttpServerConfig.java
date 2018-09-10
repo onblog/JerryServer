@@ -2,7 +2,7 @@ package cn.zyzpp.config;
 
 import ch.qos.logback.classic.Level;
 import ch.qos.logback.classic.LoggerContext;
-import cn.zyzpp.util.ProjectPath;
+import cn.zyzpp.util.PathUtil;
 import cn.zyzpp.util.StringUtil;
 import org.slf4j.LoggerFactory;
 
@@ -23,9 +23,9 @@ public class HttpServerConfig {
     /**
      * WEB_ROOT不是以分隔符结尾的
      */
-    public static final String WEB_ROOT = ProjectPath.getRootPath(WEB_NAME);
+    public static final String WEB_ROOT = PathUtil.getRootPath(WEB_NAME);
 
-    private static final String CONFIG = ProjectPath.getRootPath("config\\config.properties");
+    private static final String CONFIG = PathUtil.getRootPath("config\\config.properties");
 
     public static String NO_FOUND;
 
@@ -45,11 +45,15 @@ public class HttpServerConfig {
 
     public static Charset fm_charset;
 
+    public static int TimeOut;
+
     public static int maxElementsInMemory;
 
     public static int timeToIdleSeconds;
 
     public static int timeToLiveSeconds;
+
+    public static Charset jk_charset;
 
     private static Properties prop;
 
@@ -63,6 +67,7 @@ public class HttpServerConfig {
             NO_FOUND = WEB_ROOT + getDefault404();
             Config_Json = getConfig();
             Monitor = getMonitor();
+            TimeOut = getTimeOut();
             Port = getPort();
             INDEX = getIndexPage();
             PROJECT = getDefaultProject();
@@ -71,10 +76,38 @@ public class HttpServerConfig {
             timeToLiveSeconds = getTimeToLiveSeconds();
             js_charset = getJs_charset();
             fm_charset = getFmCharset();
+            jk_charset = getJk_charset();
             setLogLevel();
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+
+    /**
+     * 解析接口响应的编码
+     * @return
+     */
+    private static Charset getJk_charset() {
+        try {
+            return Charset.forName(prop.getProperty("jk_charset"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return Charset.forName("UTF-8");
+    }
+
+    /**
+     * 请求接口超时时间
+     * @return
+     */
+    private static int getTimeOut() {
+        try {
+            return Integer.parseInt(prop.getProperty("timeout"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return 10000;
     }
 
     /**

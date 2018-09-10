@@ -2,18 +2,13 @@
   {
     "page": "index.html",
     "id": "je",
-    "method": "GET",
-    "timeout": 20000,
-    "header": {
-      "Connection": "keep-alive"
-    },
     "inter": [
       {
         "link": "https://www.kuaidi100.com/query?type=shentong&postid=3374107234608&id=1",
         "weight": 1
       },
       {
-        "link": "https://www.kuaidi100.com/query?type=yuantong&postid=801371015800473775",
+        "link": "https://www.kuaidi100.com/query?type=yuantong&postid=801371015800473775&id=1",
         "weight": 2
       }
     ]
@@ -21,11 +16,6 @@
   {
     "page": "admin/index.html",
     "id": "je",
-    "method": "GET",
-    "timeout": 20000,
-    "header": {
-      "Connection": "keep-alive"
-    },
     "inter": [
       {
         "link": "https://www.kuaidi100.com/query?type=shentong&postid=3374107234608&id=1",

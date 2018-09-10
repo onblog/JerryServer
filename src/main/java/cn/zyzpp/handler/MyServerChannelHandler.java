@@ -1,15 +1,14 @@
 package cn.zyzpp.handler;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import cn.zyzpp.http.JerryRequest;
 import cn.zyzpp.http.JerryResponse;
 import io.netty.channel.ChannelHandler.Sharable;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
+import io.netty.handler.codec.http.FullHttpRequest;
 import io.netty.handler.codec.http.HttpObject;
-import io.netty.handler.codec.http.HttpRequest;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * 绑定处理程序中的简单通道
@@ -21,8 +20,8 @@ public class MyServerChannelHandler extends SimpleChannelInboundHandler<HttpObje
 
 	@Override
 	protected void channelRead0(ChannelHandlerContext ctx, HttpObject msg){
-		if (msg instanceof HttpRequest) {
-			JerryRequest request = new JerryRequest((HttpRequest) msg);
+		if (msg instanceof FullHttpRequest) {
+			JerryRequest request = new JerryRequest((FullHttpRequest) msg);
 			JerryResponse response = new JerryResponse(request);
 			if (request.isRedirect()) {
 				response.redirect();

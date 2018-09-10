@@ -1,7 +1,6 @@
 package cn.zyzpp.entity;
 
 import java.util.List;
-import java.util.Map;
 
 /**
  * Create by yster@foxmail.com 2018-05-05
@@ -9,10 +8,7 @@ import java.util.Map;
 public class EntityJson {
 	private String page;
 	private String id;
-	private String method;
-	private int timeout;
 	private List<EntityInter> inter;
-	private Map<String,String> header;
 	
 	public EntityJson() {
 	}
@@ -37,27 +33,4 @@ public class EntityJson {
         this.inter = inter;
     }
 
-    public String getMethod() {
-        return method;
-    }
-
-    public void setMethod(String method) {
-        this.method = method;
-    }
-
-    public Map<String, String> getHeader() {
-        return header;
-    }
-
-    public void setHeader(Map<String, String> header) {
-        this.header = header;
-    }
-
-    public int getTimeout() {
-        return timeout;
-    }
-
-    public void setTimeout(int timeout) {
-        this.timeout = timeout;
-    }
 }

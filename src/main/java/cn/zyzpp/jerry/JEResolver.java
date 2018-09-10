@@ -16,7 +16,6 @@ import java.util.Map;
 /**
  * Create by yster@foxmail.com 2018-05-05
  **/
-@SuppressWarnings("unchecked")
 public class JEResolver {
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
@@ -53,11 +52,12 @@ public class JEResolver {
      */
     public byte[] parse(String path) {
         //网络代理请求json转为Map对象
-        Map<Integer, Object> map = JEConnection.connPort(request.getFilePath(), JData);
+        Map<Integer, Object> map = JEConnection.connPort(request, JData);
         byte[] page = null;
         for (int key : map.keySet()) {
             Map<String, Object> objectMap = (Map<String, Object>) map.get(key);
             page = FreeMark.resolve(objectMap, path);
+            break;
         }
         return page;
 

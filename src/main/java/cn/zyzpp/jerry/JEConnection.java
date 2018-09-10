@@ -1,14 +1,18 @@
 package cn.zyzpp.jerry;
 
 import cn.zyzpp.balance.LoadBalance;
-import cn.zyzpp.connect.JsoupConn;
+import cn.zyzpp.config.Connection;
+import cn.zyzpp.config.HttpServerConfig;
+import cn.zyzpp.connect.Connect;
 import cn.zyzpp.entity.EntityJson;
 import cn.zyzpp.exception.CustomException;
+import cn.zyzpp.http.JerryRequest;
 import com.alibaba.fastjson.JSON;
 import net.sf.json.util.JSONTokener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.net.HttpURLConnection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -23,19 +27,22 @@ public class JEConnection {
      * 解析本地配置
      * 请求接口数据
      *
-     * @param filePath 页面名字
+     * @param request 页面名字
      * @param JData    本地配置
      * @return
      */
-    public static Map<Integer, Object> connPort(String filePath, String JData) {
+    public static Map<Integer, Object> connPort(JerryRequest request, String JData){
+        String filePath = request.getFilePath();
         Map<Integer, Object> map = new HashMap<>();
         List<EntityJson> entity = JSON.parseArray(JData, EntityJson.class);
         for (EntityJson en : entity) {
             if (filePath.equalsIgnoreCase(en.getPage())) {
                 //代理请求，得到响应字符串
-                String receive = getProxyData(en);
+                HttpURLConnection data = getProxyData(en, request);
+                //保留响应对象
+                request.setHttpURLConnection(data);
                 //判断json对象的类型
-                Object value = new JSONTokener(receive).nextValue();
+                Object value = new JSONTokener(Connection.ConnectionUtil.getBody(data,HttpServerConfig.jk_charset)).nextValue();
                 if(value instanceof net.sf.json.JSONObject){
                     Map<String,Object> object = (Map<String, Object>) value;
                     //加到map里
@@ -57,18 +64,18 @@ public class JEConnection {
      * @param en
      * @return
      */
-    private static String getProxyData(EntityJson en) {
+    private static HttpURLConnection getProxyData(EntityJson en, JerryRequest request) {
         //负载均衡
         LoadBalance loadBalance = new LoadBalance(en);
         //代理请求接口数据
-        String receive = null;
+        HttpURLConnection receive = null;
         while (loadBalance.interUsableNum(en) > 0 && receive == null) {
             String url = loadBalance.loadBalance(en);
-            logger.debug("Load Balance : "+url);
-            receive = JsoupConn.receive(en, url);
+            logger.info("Load Balance : "+url);
+            receive = Connect.receive(url, request);
             if (receive == null) {
                 //记录不可用接口
-                logger.info("The record is unavailable to the interface : "+url);
+                logger.warn(" Exception, The record is unavailable to the interface : "+url);
                 loadBalance.interError(en, url);
             }
         }

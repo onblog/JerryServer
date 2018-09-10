@@ -5,7 +5,7 @@
 
     <groupId>cn.zyzpp</groupId>
     <artifactId>JerryServer</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>JerryServer</name>
@@ -44,12 +44,6 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.47</version>
-        </dependency>
-        <!-- Jsoup-->
-        <dependency>
-            <groupId>org.jsoup</groupId>
-            <artifactId>jsoup</artifactId>
-            <version>1.10.3</version>
         </dependency>
         <!--ehcache-->
         <dependency>

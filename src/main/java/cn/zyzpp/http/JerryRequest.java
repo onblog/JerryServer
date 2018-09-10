@@ -3,40 +3,56 @@ package cn.zyzpp.http;
 import cn.zyzpp.config.HttpServerConfig;
 import cn.zyzpp.util.IOUtil;
 import cn.zyzpp.util.StringUtil;
+import io.netty.buffer.ByteBuf;
+import io.netty.handler.codec.http.FullHttpRequest;
 import io.netty.handler.codec.http.HttpHeaders;
-import io.netty.handler.codec.http.HttpMethod;
-import io.netty.handler.codec.http.HttpRequest;
 import io.netty.handler.codec.http.HttpVersion;
+import io.netty.handler.codec.http.multipart.HttpPostRequestDecoder;
+import io.netty.handler.codec.http.multipart.InterfaceHttpData;
+import io.netty.handler.codec.http.multipart.MixedAttribute;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.activation.MimetypesFileTypeMap;
 import java.io.File;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.HttpURLConnection;
+import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.StringTokenizer;
 
 /**
  * 封装HttpRequest Create by yster@foxmail.com 2018-05-04
  **/
-@SuppressWarnings("deprecation")
 public class JerryRequest {
     private Logger logger = LoggerFactory.getLogger(getClass());
 
-    private HttpRequest request;
+    private FullHttpRequest request;
 
-    public JerryRequest(HttpRequest request) {
+    private HttpURLConnection httpURLConnection;
+
+    private HttpPostRequestDecoder decoder;
+
+    public JerryRequest(FullHttpRequest request) {
         this.request = request;
+        decoder = new HttpPostRequestDecoder(request);
+        decoder.offer(request);
+
     }
 
     /**
      * Get Mothod
+     *
      * @return
      */
-    public HttpMethod getMethod() {
-        return request.getMethod();
+    public String getMethod() {
+        return request.method().name().toUpperCase();
     }
 
     /**
@@ -44,12 +60,19 @@ public class JerryRequest {
      *
      * @return
      */
-    public HttpHeaders headers() {
-        return request.headers();
+    public Map<String, String> headers() {
+        HttpHeaders headers = request.headers();
+        List<Map.Entry<String, String>> entries = headers.entries();
+        Map<String, String> map = new HashMap<>();
+        for (Map.Entry entry : entries) {
+            map.put(entry.getKey().toString(), entry.getValue().toString());
+        }
+        return map;
     }
 
     /**
      * Get protocolVersion
+     *
      * @return
      */
     public HttpVersion protocolVersion() {
@@ -58,48 +81,68 @@ public class JerryRequest {
 
     /**
      * Get HttpRequest
+     *
      * @return
      */
-    public HttpRequest getRequest() {
+    public FullHttpRequest getRequest() {
         return request;
     }
 
     /**
      * Get Uri
-     * HTTP路径转File文件
+     * HTTP URl转File Path
+     *
      * @return
      */
     public String getUri() {
+        //处理带有参数的URL
+        String uri = request.uri();
+        int w = uri.indexOf("?");
+        if (w != -1) {
+            uri = uri.substring(0, w);
+        }
+        uri = StringUtil.divideStr(uri);
         // 访问根目录
-        if ("/".equals(request.getUri())) {
+        if (File.separator.equals(uri)) {
             String path = HttpServerConfig.WEB_ROOT + File.separator + HttpServerConfig.PROJECT + File.separator + HttpServerConfig.INDEX;
             if (IOUtil.isFile(path)) {
                 return path;
             }
             return HttpServerConfig.NO_FOUND;
         }
-        // 以../结尾
-        if ("/".equals(request.getUri().substring(request.getUri().length() - 1))) {
-            String path = HttpServerConfig.WEB_ROOT + StringUtil.divideStr(request.getUri()) + HttpServerConfig.INDEX;
+        // 以../结尾的目录
+        if (File.separator.equals(uri.substring(uri.length() - 1))) {
+            String path = HttpServerConfig.WEB_ROOT + uri + HttpServerConfig.INDEX;
             if (IOUtil.isFile(path)) {
                 return path;
             }
+            String path1 = HttpServerConfig.WEB_ROOT + File.separator + HttpServerConfig.PROJECT + uri + HttpServerConfig.INDEX;
+            if (IOUtil.isFile(path1)) {
+                return path1;
+            }
             return HttpServerConfig.NO_FOUND;
         }
-        String path = HttpServerConfig.WEB_ROOT + StringUtil.divideStr(request.getUri());
-        //处理带有参数的URL
-        int w = path.indexOf("?");
-        if (w != -1) {
-            path = path.substring(0, w);
-        }
+
+        String path = HttpServerConfig.WEB_ROOT + uri;
         // 访问项目文件 ../index.js ../css.css
         if (IOUtil.isFile(path)) {
             return path;
         }
         // 访问项目文件夹 ../js
+        // 会被重定向到../
         if (IOUtil.isDirectory(path)) {
             return path;
         }
+
+        // 找不到文件再去ROOT目录下找
+        String path1 = HttpServerConfig.WEB_ROOT + File.separator + HttpServerConfig.PROJECT + uri;
+        if (IOUtil.isFile(path1)) {
+            return path1;
+        }
+        if (IOUtil.isDirectory(path1)) {
+            return path1;
+        }
+
         // 没找到这个请求资源
         return HttpServerConfig.NO_FOUND;
     }
@@ -141,6 +184,51 @@ public class JerryRequest {
     }
 
     /**
+     * Get GET Parmas
+     * ?name=xxx
+     * <br>或者null
+     *
+     * @return
+     */
+    public String getGetParm() {
+        if (request.uri().contains("?")) {
+            int i = request.uri().indexOf("?");
+            return request.uri().substring(i);
+        }
+        return "";
+    }
+
+    /**
+     * Get POST Parma
+     * Map
+     *
+     * @return
+     */
+    public Map<String, String> getPostParm() throws UnsupportedEncodingException {
+        Map<String, String> map = new HashMap<>();
+        try {
+            List<InterfaceHttpData> parmList = decoder.getBodyHttpDatas();
+            for (InterfaceHttpData parm : parmList) {
+                MixedAttribute data = (MixedAttribute) parm;
+                data.setCharset(Charset.forName("UTF-8"));
+                map.put(data.getName(), data.getValue());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return map;
+    }
+
+    /**
+     * Get Content
+     */
+    public String getContent() {
+        ByteBuf content = request.content();
+        String s = content.toString(Charset.forName("UTF-8"));
+        return s;
+    }
+
+    /**
      * Get File Path
      * css/style.css
      *
@@ -148,7 +236,7 @@ public class JerryRequest {
      */
     public String getFilePath() {
         String filePath = StringUtil.httpStr(getUri());
-        for (String s : filePath.split(getProject()+"/")) {
+        for (String s : filePath.split(getProject() + "/")) {
             filePath = s;
         }
         return filePath;
@@ -191,4 +279,12 @@ public class JerryRequest {
         return false;
     }
 
+
+    public HttpURLConnection getHttpURLConnection() {
+        return httpURLConnection;
+    }
+
+    public void setHttpURLConnection(HttpURLConnection httpURLConnection) {
+        this.httpURLConnection = httpURLConnection;
+    }
 }

@@ -102,7 +102,7 @@ public class LoadBalance {
      * @return
      */
     private int accessKey(EntityJson entityJson){
-        return (entityJson.getId()+entityJson.getPage()+entityJson.getMethod()).hashCode();
+        return (entityJson.getPage()).hashCode();
     }
 
 }

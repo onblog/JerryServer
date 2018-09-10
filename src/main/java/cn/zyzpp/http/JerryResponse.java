@@ -8,13 +8,13 @@ import cn.zyzpp.util.IOUtil;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
-import io.netty.handler.codec.http.DefaultFullHttpResponse;
-import io.netty.handler.codec.http.FullHttpResponse;
-import io.netty.handler.codec.http.HttpResponseStatus;
-import io.netty.handler.codec.http.HttpVersion;
+import io.netty.handler.codec.http.*;
 import net.sf.ehcache.Element;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * Create by yster@foxmail.com 2018-05-04
@@ -47,7 +47,7 @@ public class JerryResponse {
         response = response(request);
 
         long time = System.currentTimeMillis() - start;
-        logger.debug("Find a request: /" + request.getProject() + "/" + request.getFilePath() + " LoadTime：" + time);
+        logger.debug("Find a request: /" + request.getProject() + "/" + request.getFilePath() + " LoadTime：" + time + "Content-Type: " + request.getContentType());
         new Monitor().openMonitor(request, time);//页面监控
     }
 
@@ -74,7 +74,13 @@ public class JerryResponse {
         } else {
             response = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK, buf);
         }
-
+        if (request.getHttpURLConnection()!=null) {
+            //把Cookies原封不动还给客户端
+            Map<String, List<String>> headers = request.getHttpURLConnection().getHeaderFields();
+            if (headers.containsKey("Set-Cookie")) {
+                response.headers().set(HttpHeaders.Names.SET_COOKIE,headers.get("Set-Cookie"));
+            }
+        }
         response.headers().set("Content-Type", request.getContentType());
         response.headers().set("Content-Length", buf.readableBytes());
         return response;
@@ -87,8 +93,9 @@ public class JerryResponse {
      * @return
      */
     private ByteBuf getByteBuf(JerryRequest request) {
+        //缓存
         Element element = MyCache.cache.get(request.getUri());
-        if (element != null && MyCache.isCache(request)) { //检查缓存
+        if (element != null && MyCache.isCache(request)) {
             logger.debug("use cache: " + request.getUri());
             return Unpooled.copiedBuffer((byte[]) element.getObjectValue());
         }
@@ -99,14 +106,15 @@ public class JerryResponse {
         //Is JE File ?
         byte[] responseBody;
         if (resolver.judge()) {
-            responseBody = resolver.parse(request.getProject()+"/"+request.getFilePath());
+            responseBody = resolver.parse(request.getProject() + "/" + request.getFilePath());
             buf = Unpooled.copiedBuffer(responseBody);
         } else {
             responseBody = IOUtil.readFileToByte(request.getUri());
             buf = Unpooled.copiedBuffer(responseBody != null ? responseBody : new byte[1]);
+            //缓存
+            MyCache.cache.put(new Element(request.getUri(), responseBody));
         }
 
-        MyCache.cache.put(new Element(request.getUri(), responseBody));//cache
         return buf;
     }
 
