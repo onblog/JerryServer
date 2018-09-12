@@ -3,7 +3,7 @@ package cn.zyzpp.connect;
 import cn.zyzpp.config.HttpServerConfig;
 import cn.zyzpp.exception.CustomException;
 import cn.zyzpp.http.JerryRequest;
-import cn.zyzpp.config.Connection;
+import cn.zyzpp.util.Connection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

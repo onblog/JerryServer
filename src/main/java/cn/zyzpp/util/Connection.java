@@ -1,4 +1,4 @@
-package cn.zyzpp.config;
+package cn.zyzpp.util;
 
 import java.io.*;
 import java.net.HttpURLConnection;

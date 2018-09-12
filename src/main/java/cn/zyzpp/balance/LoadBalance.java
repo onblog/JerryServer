@@ -21,7 +21,7 @@ public class LoadBalance {
     // 负载均衡记录表<Id+Page,Table>
     private final static Map<Integer, InterList> map = new HashMap<>();
 
-    public LoadBalance(EntityJson entity) {
+    synchronized static public void init(EntityJson entity) {
         //判断表中是否存在记录
         if (map.get(accessKey(entity)) == null) {
             List<InterReward> rewardList = new ArrayList<>();
@@ -38,7 +38,7 @@ public class LoadBalance {
      * @param entity
      * @return
      */
-    synchronized public String loadBalance(EntityJson entity) {
+    synchronized static public String loadBalance(EntityJson entity) {
         //是否存在接口
         if (entity.getInter().isEmpty()) {
             throw new CustomException("The interface is not configured. Please check the configuration file");
@@ -70,7 +70,7 @@ public class LoadBalance {
      * @param url
      * @return
      */
-    synchronized public void interError(EntityJson en, String url) {
+    synchronized static public void interError(EntityJson en, String url) {
         InterList interList = map.get(accessKey(en));
         for (InterReward i : interList.getInterRewardList()) {
             if (i.getLink().equalsIgnoreCase(url)) {
@@ -85,7 +85,7 @@ public class LoadBalance {
      * @param en
      * @return
      */
-    public int interUsableNum(EntityJson en) {
+    public static int interUsableNum(EntityJson en) {
         InterList interList = map.get(accessKey(en));
         int num = 0;
         for (InterReward i : interList.getInterRewardList()) {
@@ -101,7 +101,7 @@ public class LoadBalance {
      * @param entityJson
      * @return
      */
-    private int accessKey(EntityJson entityJson){
+    static private int accessKey(EntityJson entityJson){
         return (entityJson.getPage()).hashCode();
     }
 
