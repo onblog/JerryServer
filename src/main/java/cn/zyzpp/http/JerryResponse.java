@@ -30,12 +30,18 @@ public class JerryResponse {
 
     /**
      * 重定向
-     *
+     * /ROOT? -> /ROOT/?
      * @return
      */
     public void redirect() {
         response = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.FOUND);
-        response.headers().set("Location", request.getRequest().getUri() + "/");
+        String uri = request.getRequest().getUri();
+        if (uri.contains("?")){
+            uri = uri.substring(0,uri.indexOf("?"))+"/"+uri.substring(uri.indexOf("?"));
+        }else {
+            uri=uri+"/";
+        }
+        response.headers().set("Location", uri);
     }
 
     /**

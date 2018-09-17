@@ -101,6 +101,7 @@ public class JerryRequest {
         if (w != -1) {
             uri = uri.substring(0, w);
         }
+        //uri分隔符转为系统路径分隔符
         uri = StringUtil.divideStr(uri);
         // 访问根目录
         if (File.separator.equals(uri)) {
@@ -135,12 +136,12 @@ public class JerryRequest {
         }
 
         // 找不到文件再去ROOT目录下找
-        String path1 = HttpServerConfig.WEB_ROOT + File.separator + HttpServerConfig.PROJECT + uri;
-        if (IOUtil.isFile(path1)) {
-            return path1;
+        path = HttpServerConfig.WEB_ROOT + File.separator + HttpServerConfig.PROJECT + uri;
+        if (IOUtil.isFile(path)) {
+            return path;
         }
-        if (IOUtil.isDirectory(path1)) {
-            return path1;
+        if (IOUtil.isDirectory(path)) {
+            return path;
         }
 
         // 没找到这个请求资源
@@ -264,15 +265,20 @@ public class JerryRequest {
 
     /**
      * 是否需要重定向
-     * 主要针对只访问域名的情况
-     *
+     * <br>
+     * 针对/ROOT?这种URI路径
      * @return
      */
     public boolean isRedirect() {
-        if (!"/".equals(request.getUri().substring(request.getUri().length() - 1))) {
-            String uri = getUri();
-            if (IOUtil.isDirectory(uri)) {
-                logger.debug("redirect" + uri);
+        String uri = request.getUri();
+        if (uri.contains("?")){
+            uri = uri.substring(0,uri.indexOf("?"));
+        }
+        //如果不是以/结尾的url
+        if (!"/".equals(uri.substring(uri.length() - 1))) {
+            String uri1 = getUri();
+            if (IOUtil.isDirectory(uri1)) {
+                logger.debug("redirect" + uri1);
                 return true;
             }
         }
