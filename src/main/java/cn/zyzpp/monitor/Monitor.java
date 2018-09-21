@@ -2,11 +2,13 @@ package cn.zyzpp.monitor;
 
 import cn.zyzpp.http.JerryRequest;
 import cn.zyzpp.monitor.entity.Item;
-import cn.zyzpp.monitor.thread.LogWriteThread;
 import cn.zyzpp.monitor.thread.LogThread;
+import cn.zyzpp.monitor.thread.LogWriteThread;
 
 import java.util.Hashtable;
 import java.util.Map;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * 监控系统
@@ -16,9 +18,12 @@ import java.util.Map;
 public class Monitor {
     //线程安全，用来记录日志。
     private static final Map<String, Item> map = new Hashtable<>();
-    private static boolean updata;//是否更新log
+    //线程池
+    private static ExecutorService executor = Executors.newCachedThreadPool();
+    //是否更新log
+    private static boolean updata;
     //日志写入到文件的线程
-    private static final LogWriteThread logFileThread = new LogWriteThread();
+    private static LogWriteThread logFileThread = new LogWriteThread();
     //更新日志的线程
     private LogThread logThread = new LogThread();
 
@@ -32,7 +37,7 @@ public class Monitor {
 
     public void openMonitor(JerryRequest request, long time) {
         logThread.prepare(request, time, map);
-        logThread.start();
+        executor.execute(logThread);
         Monitor.setUpdata(true);
         if (!logFileThread.isAlive()){
             logFileThread.setName("writeLogThread");
