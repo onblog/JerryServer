@@ -44,8 +44,6 @@
 
 代理服务器收到后端的响应内容，提取响应头中的Set-Cookie值，并处理响应体（JSON），使用FreeMarker模板引擎渲染到HTML文件，携带Set-Cookie一起响应给浏览器，对于浏览器用户来说，就好像只与服务端进行通信。
 
-![1537158422954](./picture/1537158422954.png)
-
 ## 5、安装使用
 
 1. 前往Git仓库克隆/下载Zip压缩包到本地电脑。
@@ -58,9 +56,13 @@
 
 3. 在控制台执行`java -jar JerryServer-1.0.0-SNAPSHOT.jar`命令运行该jar包。Linux系统如使其在后台运行，在末尾加个`&`即可。
 
-4. 访问http://localhost:8888出现如下界面（默认访问ROOT项目的index.html文件）
+4. 访问 <http://localhost:8888> 出现如下界面（默认访问ROOT项目的index.html文件）
 
    ![1537158441757](./picture/1537158441757.png)
+   
+   访问 <http://localhost:8888/admin> 体验动态渲染。
+   
+   ![1537158422954](./picture/1537158422954.png)
 
 5. 安装成功！
 
