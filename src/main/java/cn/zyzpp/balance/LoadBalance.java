@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * 负载均衡
@@ -20,8 +21,11 @@ import java.util.concurrent.ConcurrentHashMap;
 public class LoadBalance {
     // 负载均衡记录表<Id+Page,Table>
     private final static Map<Integer, InterList> map = new ConcurrentHashMap<>();
+    //同步锁
+    private static ReentrantLock lock = new ReentrantLock();
 
-    synchronized static public void init(EntityJson entity) {
+    public LoadBalance(EntityJson entity) {
+        lock.lock();
         //判断表中是否存在记录
         if (map.get(accessKey(entity)) == null) {
             List<InterReward> rewardList = new ArrayList<>();
@@ -30,6 +34,7 @@ public class LoadBalance {
             }
             map.put(accessKey(entity), new InterList(rewardList));
         }
+        lock.unlock();
     }
 
     /**
@@ -38,7 +43,7 @@ public class LoadBalance {
      * @param entity
      * @return
      */
-    synchronized static public String loadBalance(EntityJson entity) {
+    public String loadBalance(EntityJson entity) {
         //是否存在接口
         if (entity.getInter().isEmpty()) {
             throw new CustomException("The interface is not configured. Please check the configuration file");
@@ -48,6 +53,7 @@ public class LoadBalance {
             return entity.getInter().get(0).getLink();
         }
         //开始负载均衡
+        lock.lock();
         InterList interList = map.get(accessKey(entity));
         for (InterReward inter : interList.getInterRewardList()) {
             if (inter.isUsed() && inter.getCount() < inter.getWeight()) {
@@ -56,6 +62,7 @@ public class LoadBalance {
                 return inter.getLink();
             }
         }
+        lock.unlock();
         //已满则初始化为零
         for (InterReward inter : interList.getInterRewardList()) {
             inter.setCount(0);
@@ -70,7 +77,7 @@ public class LoadBalance {
      * @param url
      * @return
      */
-    synchronized static public void interError(EntityJson en, String url) {
+    public void interError(EntityJson en, String url) {
         InterList interList = map.get(accessKey(en));
         for (InterReward i : interList.getInterRewardList()) {
             if (i.getLink().equalsIgnoreCase(url)) {
@@ -85,7 +92,7 @@ public class LoadBalance {
      * @param en
      * @return
      */
-    public static int interUsableNum(EntityJson en) {
+    public int interUsableNum(EntityJson en) {
         InterList interList = map.get(accessKey(en));
         int num = 0;
         for (InterReward i : interList.getInterRewardList()) {
