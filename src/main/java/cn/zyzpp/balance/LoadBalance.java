@@ -8,9 +8,9 @@ import cn.zyzpp.entity.EntityJson;
 import cn.zyzpp.exception.CustomException;
 
 import java.util.ArrayList;
-import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 负载均衡
@@ -19,7 +19,7 @@ import java.util.Map;
  */
 public class LoadBalance {
     // 负载均衡记录表<Id+Page,Table>
-    private final static Map<Integer, InterList> map = new Hashtable<>();
+    private final static Map<Integer, InterList> map = new ConcurrentHashMap<>();
 
     synchronized static public void init(EntityJson entity) {
         //判断表中是否存在记录
