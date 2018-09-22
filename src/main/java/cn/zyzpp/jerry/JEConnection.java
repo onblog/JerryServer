@@ -66,17 +66,17 @@ public class JEConnection {
      */
     private static HttpURLConnection getProxyData(EntityJson en, JerryRequest request) {
         //负载均衡
-        LoadBalance.init(en);
+        LoadBalance loadBalance = new LoadBalance(en);
         //代理请求接口数据
         HttpURLConnection receive = null;
-        while (LoadBalance.interUsableNum(en) > 0 && receive == null) {
-            String url = LoadBalance.loadBalance(en);
+        while (loadBalance.interUsableNum(en) > 0 && receive == null) {
+            String url = loadBalance.loadBalance(en);
             logger.info("Load Balance : "+url);
             receive = Connect.receive(url, request);
             if (receive == null) {
                 //记录不可用接口
                 logger.warn(" Exception, The record is unavailable to the interface : "+url);
-                LoadBalance.interError(en, url);
+                loadBalance.interError(en, url);
             }
         }
         if (receive == null) {
