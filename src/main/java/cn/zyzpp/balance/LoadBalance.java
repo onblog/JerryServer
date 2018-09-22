@@ -108,7 +108,7 @@ public class LoadBalance {
      * @param entityJson
      * @return
      */
-    static private int accessKey(EntityJson entityJson){
+    private int accessKey(EntityJson entityJson){
         return (entityJson.getPage()).hashCode();
     }
 
