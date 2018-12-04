@@ -1,6 +1,6 @@
 package cn.zyzpp.balance.entity;
 
-import cn.zyzpp.entity.EntityInter;
+import cn.zyzpp.page.EntityInter;
 
 /**
  * 对 Inter接口 增强

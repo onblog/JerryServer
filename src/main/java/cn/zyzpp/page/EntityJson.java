@@ -1,8 +1,9 @@
-package cn.zyzpp.entity;
+package cn.zyzpp.page;
 
 import java.util.List;
 
 /**
+ * 对于web项目的page.json文件
  * Create by yster@foxmail.com 2018-05-05
 **/
 public class EntityJson {

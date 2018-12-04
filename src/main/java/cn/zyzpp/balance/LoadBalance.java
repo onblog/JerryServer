@@ -3,8 +3,8 @@ package cn.zyzpp.balance;
 
 import cn.zyzpp.balance.entity.InterList;
 import cn.zyzpp.balance.entity.InterReward;
-import cn.zyzpp.entity.EntityInter;
-import cn.zyzpp.entity.EntityJson;
+import cn.zyzpp.page.EntityInter;
+import cn.zyzpp.page.EntityJson;
 import cn.zyzpp.exception.CustomException;
 
 import java.util.ArrayList;

@@ -1,6 +1,7 @@
-package cn.zyzpp.entity;
+package cn.zyzpp.page;
 
 /**
+ * 对于web项目的page.json文件
  * Create by yster@foxmail.com 2018/9/4/004 9:56
  */
 public class EntityInter {
