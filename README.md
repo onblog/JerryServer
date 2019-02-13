@@ -262,5 +262,5 @@ Gitee：<https://gitee.com/zyzpp/JerryServer>
 
 开源中国：https://www.oschina.net/p/jerryserver
 
-<img src="./picture/qrcode_1536386595566.jpg" width = "200px" height = "250px" />
+交流QQ群：781927207
 
