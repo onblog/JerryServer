@@ -258,3 +258,6 @@ Gitee：<https://gitee.com/zyzpp/JerryServer>
 
 交流QQ群：781927207
 
+<img src="https://s2.ax1x.com/2019/08/05/egzGQg.png" width="300px" referrerpolicy="no-referrer">
+
+<img src="https://s2.ax1x.com/2019/08/05/egzkRO.png" width="300px" referrerPolicy="no-referrer">
