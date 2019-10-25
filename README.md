@@ -252,10 +252,9 @@ Jerry把所有的web项目与页面都放在了webapps下，服务器也只会�
 
 Github：<https://github.com/yueshutong/JerryServer/> 
 
-Gitee：<https://gitee.com/zyzpp/JerryServer>
-
-开源中国：https://www.oschina.net/p/jerryserver
-
 交流QQ群：781927207
 
-<img src="https://images.gitee.com/uploads/images/2019/0814/135740_5b455e5f_1620924.png" width="300px" referrerpolicy="no-referrer">
+<img src="https://user-images.githubusercontent.com/31175877/67548917-af6d1600-f735-11e9-9807-351e6a2db269.png" width="300px" referrerpolicy="no-referrer">
+
+<img src="https://user-images.githubusercontent.com/31175877/67549023-e17e7800-f735-11e9-89d4-5ca7dac0486d.png" width="300px" referrerpolicy="no-referrer">
+
