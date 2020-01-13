@@ -248,13 +248,9 @@ Jerry把所有的web项目与页面都放在了webapps下，服务器也只会�
 
 *若使用出现Bug等问题，请到以下地址留言评论，或者加入QQ群交流。*
 
-我的博客：https://yueshutong.cnblogs.com/
-
 Github：<https://github.com/yueshutong/JerryServer/> 
 
 交流QQ群：781927207
 
-<img src="https://user-images.githubusercontent.com/31175877/67548917-af6d1600-f735-11e9-9807-351e6a2db269.png" width="300px" referrerpolicy="no-referrer">
-
-<img src="https://user-images.githubusercontent.com/31175877/67549023-e17e7800-f735-11e9-89d4-5ca7dac0486d.png" width="300px" referrerpolicy="no-referrer">
+<img src='https://i.loli.net/2020/01/13/pPoFNwT6fKCZQ2i.png' width="400px" />
 
