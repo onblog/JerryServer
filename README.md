@@ -1,8 +1,4 @@
-# Jerry Server - 正式版1.0.0 文档
-
-![](./picture/1536240835611.png)
-
-如果你还不了解现在的前后端分离，推荐阅读淘宝前端团队的[前后端分离的思考与实践](http://taobaofed.org/blog/2014/04/05/practice-of-separation-of-front-end-from-back-end/)
+# Jerry Server
 
 ## 1、问题
 
@@ -15,7 +11,6 @@
 综上所述，为了彻底解决上面的两个问题，既能实现前端与后端的完全分离，而又不需要使用js去渲染页面。我们在服务端处理页面的基础上发明了一种改变传统网站开发模式的web服务器，解决web开发中前后端难分离的问题。
 
 本发明可以把后端人员对页面的处理的工作交还给前端去做。后端人员只需要面向接口编程，而不必接触前端HTML页面的实现。原来需要后端去写FreeMarker语法逻辑去渲染HTML页面的工作交由前端人员去做。本质上只是分离了这部分工作安排，而并没有改变工作的内容。
-
 
 ## 2、定义
 
@@ -55,11 +50,11 @@ Jerry服务器是类似Tomcat的web服务器，帮助前后端完全分离的工
 
 4. 访问 <http://localhost:8888> 出现如下界面（默认访问ROOT项目的index.html文件）
 
-   ![1537158441757](./picture/1537158441757.png)
+![1537158441757](./picture/1537158441757.png)
    
-   访问 <http://localhost:8888/admin> 体验动态渲染。
+访问 <http://localhost:8888/admin> 体验动态渲染。
    
-   ![1537158422954](./picture/1537158422954.png)
+![1537158422954](./picture/1537158422954.png)
 
 5. 安装成功！
 
@@ -69,25 +64,25 @@ Jerry 使用 FreeMarker 作为模板引擎。
 
 例如，服务端接口：
 
-```
+```json
 {
 	"message": "响应成功",
 	"state": {
-		"message": "ok",
+		"message": "ok"
 	},
 	"data": [{
-		"time": "2018-04-25 13:25:07",
+		"time": "2018-04-25 13:25:07"
 	}, {
-		"time": "2018-04-25 13:25:07",
+		"time": "2018-04-25 13:25:07"
 	}]
 
 }
 ```
 HTML页面：
-```
-    message：${message}<br>
-    com: ${com}<br>
-    data[0].time：${data[0].time}
+```properties
+message：${message}<br>
+com: ${com}<br>
+data[0].time：${data[0].time}
 ```
 
 其它用法请参考FreeMarker学习网站：[FreeMarker开发手册](http://FreeMarkerer.foofun.cn/)
@@ -98,7 +93,7 @@ HTML页面：
 
 对于监控日志可以自定义输出目录，目录只支持相对路径（也就是只能在webapps目录下），监控日志格式为JSON。
 
-默认提供的监控页面位于webapps/manage项目下。默认访问：http://localhost:8888/manage
+默认提供的监控页面位于webapps/manage项目下。默认访问：`http://localhost:8888/manage`
 
 后台监控页面预览：
 
@@ -159,7 +154,7 @@ Jerry把所有的web项目与页面都放在了webapps下，服务器也只会�
 
 先看一下示范文件，下面进行讲解。
 
-```
+```json
 [
   {
     "page": "index.html",
@@ -220,9 +215,7 @@ Jerry把所有的web项目与页面都放在了webapps下，服务器也只会�
 
 ### 3，是不是造Node.Js的轮子
 
-关于Node.Js，在做这个的时候我真的不知道它是干啥的。因为我是一名Java后端工程师。
-
-现在了解了Node.Js后，感觉Node.Js和我的这个web服务器的角色都是中间的代理服务器，从两者渲染HTML页面的方式上来看，本质还是不同的。Node.Js使用的JS进行编程式渲染，需要写代码逻辑，我的web服务器使用的FreeMarker模板引擎，直接在HTML上写表达式语法，相比较之下，我的web服务器更简单，更方便。非但如此，JerryServer服务器更符合服务拆分的思想。NodeJs虽然起到了前后端分离的作用，但也加大了前端人员的业务需求，许多后端的业务从此转为了前端。JerryServer轻量简单可分布式扩展，如何选择，还需要根据实际情况判断。
+关于Node.Js，在做这个的时候我真的不知道它是干啥的.现在了解了Node.Js后，感觉Node.Js和我的这个web服务器的角色都是中间的代理服务器，从两者渲染HTML页面的方式上来看，本质还是不同的。Node.Js使用的JS进行编程式渲染，需要写代码逻辑，我的web服务器使用的FreeMarker模板引擎，直接在HTML上写表达式语法，相比较之下，我的web服务器更简单，更方便。非但如此，JerryServer服务器更符合服务拆分的思想。NodeJs虽然起到了前后端分离的作用，但也加大了前端人员的业务需求，许多后端的业务从此转为了前端。JerryServer轻量简单可分布式扩展，如何选择，还需要根据实际情况判断。
 
 ## 12、更新日志
 
@@ -251,4 +244,7 @@ Email：[yster@foxmail.com](mailto:yster@foxmail.com)
 如果帮助到你了，请不吝赞赏！谢谢！
 
 <img src='https://i.loli.net/2020/01/13/pPoFNwT6fKCZQ2i.png' width="400px" />
+
+参考资料：[前后端分离的思考与实践](http://taobaofed.org/blog/2014/04/05/practice-of-separation-of-front-end-from-back-end/)
+
 
