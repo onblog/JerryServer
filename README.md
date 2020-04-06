@@ -237,9 +237,9 @@ Jerry把所有的web项目与页面都放在了webapps下，服务器也只会�
 
 ## 13、尾声
 
-### 禁止申请专利！
+作者：薛勤 ，运营个人公众号：代码艺术（ID：onblog）
 
-Email：[yster@foxmail.com](mailto:yster@foxmail.com)
+我的邮箱：[yster@foxmail.com](mailto:yster@foxmail.com)
 
 如果帮助到你了，请不吝赞赏！谢谢！
 
