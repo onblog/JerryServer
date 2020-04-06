@@ -25,19 +25,19 @@ public class LoadBalance {
     private static ReentrantLock lock = new ReentrantLock();
 
     public LoadBalance(EntityJson entity) {
-        try {
+        try {
             lock.lock();
             //判断表中是否存在记录
             if (map.get(accessKey(entity)) == null) {
-             List<InterReward> rewardList = new ArrayList<>();
+                List<InterReward> rewardList = new ArrayList<>();
                 for (EntityInter e : entity.getInter()) {
-                     rewardList.add(new InterReward(e, true, 0));
+                    rewardList.add(new InterReward(e, true, 0));
                 }
-              map.put(accessKey(entity), new InterList(rewardList));
-             }
-        } finally {
-            lock.unlock();
-        }
+                map.put(accessKey(entity), new InterList(rewardList));
+            }
+        } finally {
+            lock.unlock();
+        }
     }
 
     /**
@@ -56,19 +56,19 @@ public class LoadBalance {
             return entity.getInter().get(0).getLink();
         }
         //开始负载均衡
-       try {
-            lock.lock();
+        lock.lock();
         InterList interList = map.get(accessKey(entity));
-        for (InterReward inter : interList.getInterRewardList()) {
-            if (inter.isUsed() && inter.getCount() < inter.getWeight()) {
-                //注意这里的线程安全问题。
-                inter.setCount(inter.getCount() + 1);
-                return inter.getLink();
+        try {
+            for (InterReward inter : interList.getInterRewardList()) {
+                if (inter.isUsed() && inter.getCount() < inter.getWeight()) {
+                    //注意这里的线程安全问题。
+                    inter.setCount(inter.getCount() + 1);
+                    return inter.getLink();
+                }
             }
+        } finally {
+            lock.unlock();
         }
-        } finally {
-            lock.unlock();
-        }
         //已满则初始化为零
         for (InterReward inter : interList.getInterRewardList()) {
             inter.setCount(0);
