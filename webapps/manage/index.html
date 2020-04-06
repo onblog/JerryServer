@@ -1,0 +1,62 @@
+<html>
+<head>
+    <style id="stndz-style"></style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Jerry Admin</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="./layui/css/layui.css" media="all">
+</head>
+<body>
+<div>
+    <div class="layui-body">
+        <div>
+            <table class="layui-hide" id="test" lay-filter="test"></table>
+        </div>
+    </div>
+</div>
+<script src="./layui/layui.js" charset="utf-8"></script>
+<script>
+    layui.use('table', function () {
+        var table = layui.table;
+        table.render({
+            elem: '#test'
+            , url: './log.json'
+            , toolbar: true
+            , title: '用户数据表'
+            , totalRow: false
+            , cols: [[
+                {field: 'project', title: '项目', width: 100, fixed: 'left', sort: true,}
+                , {field: 'url', title: 'URL', width: 150}
+                , {field: 'method', title: 'Method', width: 86,sort: true}
+                , {field: 'time', title: '耗时/ms', width: 90, sort: true}
+                , {field: 'data', title: '时间', width: 150, sort: true}
+                , {field: 'contentType', title: 'ContentType', width: 180, sort: true}
+                , {field: 'headers', title: 'Headers'}
+                , {field: 'protocolVersion', title: 'HttpVersion', width: 127}
+                , {field: 'uri', title: '路径', sort: true}
+            ]]
+            , page: true
+            , response: {
+                statusCode: 200 //重新规定成功的状态码为 200，table 组件默认为 0
+            }
+            , parseData: function (res) { //将原始数据解析成 table 组件所规定的数据
+                return {
+                    "code": res.status, //解析接口状态
+                    "msg": res.message, //解析提示文本
+                    "count": res.total, //解析数据长度
+                    "data": res.rows.item //解析数据列表
+                };
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
